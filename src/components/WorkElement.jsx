@@ -1,5 +1,6 @@
 import { FiExternalLink } from 'react-icons/fi';
 import { AiFillGithub } from 'react-icons/ai';
+import { i18n } from '../locale/i18n';
 
 const WorkElement = ({
   img,
@@ -27,7 +28,9 @@ const WorkElement = ({
             <p className="text-lg text-center mx-5">{description}</p>
             <div className="flex justify-center items-center flex-col">
               <div className="flex flex-col items-center">
-                <h1 className="text-lg mb-1.5 font-medium">Tools</h1>
+                <h1 className="text-lg mb-1.5 font-medium">
+                  {i18n.t('worksSection.workElement.tools')}
+                </h1>
                 <div className="flex justify-center items-center">
                   <div className="font-medium">{tools}</div>
                 </div>
@@ -39,7 +42,8 @@ const WorkElement = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo <FiExternalLink size={19} />
+                  {i18n.t('worksSection.workElement.buttons.demo')}{' '}
+                  <FiExternalLink size={19} />
                 </a>
                 <a
                   className="h-9 w-28 rounded mx-1.5 shadow-sm shadow-theme-white bg-theme-white text-theme-black font-bold  flex items-center justify-around hover:-translate-y-[2px] active:-translate-y-[2px] duration-300"
@@ -47,7 +51,8 @@ const WorkElement = ({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  View Code <AiFillGithub size={19} />
+                  {i18n.t('worksSection.workElement.buttons.code')}{' '}
+                  <AiFillGithub size={19} />
                 </a>
               </div>
             </div>
@@ -70,7 +75,9 @@ const WorkElement = ({
           }`}
         >
           <div>
-            <p className="italic">Featured Project</p>
+            <p className="italic">
+              {i18n.t('worksSection.workElement.featured')}
+            </p>
             <h1 className="text-3xl my-1.5 font-medium ">
               <a href={link} rel="noreferrer" target="_blank">
                 {name}
@@ -97,7 +104,9 @@ const WorkElement = ({
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sm:hidden md:block">Live Demo </span>
+              <span className="sm:hidden md:block">
+                {i18n.t('worksSection.workElement.buttons.demo')}{' '}
+              </span>
               <FiExternalLink size={20} />
             </a>
             <a
@@ -106,7 +115,9 @@ const WorkElement = ({
               target="_blank"
               rel="noreferrer"
             >
-              <span className="sm:hidden md:block">View Code</span>
+              <span className="sm:hidden md:block">
+                {i18n.t('worksSection.workElement.buttons.code')}{' '}
+              </span>
               <AiFillGithub size={20} />
             </a>
           </div>

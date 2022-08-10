@@ -4,6 +4,26 @@ import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
+import { Fragment } from 'react';
+import { Menu, Transition } from '@headlessui/react';
+import { BsChevronDown } from 'react-icons/bs';
+import { i18n } from '../locale/i18n';
+import '../../node_modules/flag-icons/css/flag-icons.min.css';
+
+const I18N_STORAGE_KEY = 'i18nextLng';
+const CURRENT_KEY = localStorage.getItem('i18nextLng');
+
+const classNames = (...classes) => {
+  return classes.filter(Boolean).join(' ');
+};
+
+const changeLocale = (e) => {
+  console.log(e.target.value);
+  localStorage.setItem(I18N_STORAGE_KEY, e.target.value);
+  if (CURRENT_KEY !== e.target.value) {
+    window.location.reload();
+  }
+};
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -16,7 +36,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="w-full mx-auto h-14 md:h-16 flex justify-between items-center px-5 md:px-10 bg-[rgba(32,32,35,0.4)] text-theme-white fixed backdrop-blur-[10px] z-10 shadow-[0px_3px_15px_0px] shadow-[rgba(0,0,0,0.2)]">
+    <header className="w-full mx-auto h-12 md:h-14 flex justify-between items-center px-5 md:px-10 bg-[rgba(32,32,35,0.4)] text-theme-white fixed backdrop-blur-[10px] z-10 shadow-[0px_3px_15px_0px] shadow-[rgba(0,0,0,0.2)]">
       <Link to="about" smooth={true} duration={600}>
         <div className="group flex justify-center items-center select-none">
           <img
@@ -28,33 +48,97 @@ const Navbar = () => {
         </div>
       </Link>
 
-      <div className="hidden md:block">
+      <div className="hidden md:flex items-center justify-center">
+        <div className="h-full mr-4">
+          <Menu as="div" className="relative inline-block text-left">
+            <div>
+              <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-theme-white shadow-sm px-2 py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100">
+                {CURRENT_KEY === 'pt-BR' ? (
+                  <span className="fi fi-br"></span>
+                ) : (
+                  <span className="fi fi-us"></span>
+                )}
+                <BsChevronDown
+                  className="-mr-1 ml-1 text-sm"
+                  aria-hidden="true"
+                />
+              </Menu.Button>
+            </div>
+
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                <div className="py-1">
+                  <Menu.Item>
+                    {({ active }) => (
+                      <button
+                        value="pt-BR"
+                        className={classNames(
+                          active
+                            ? 'bg-theme-white text-theme-black'
+                            : 'text-gray-700',
+                          'w-full text-left block px-4 py-2 text-sm'
+                        )}
+                        onClick={changeLocale}
+                      >
+                        <span className="fi fi-br mr-2"></span>Português
+                      </button>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <button
+                        value="en-US"
+                        className={classNames(
+                          active
+                            ? 'bg-theme-white text-theme-black'
+                            : 'text-gray-700',
+                          'w-full text-left block px-4 py-2 text-sm'
+                        )}
+                        onClick={changeLocale}
+                      >
+                        <span className="fi fi-us mr-2"></span>English
+                      </button>
+                    )}
+                  </Menu.Item>
+                </div>
+              </Menu.Items>
+            </Transition>
+          </Menu>
+        </div>
         <ul className="flex text-xl w-[330px] justify-between items-center">
           <li className="cursor-pointer hover:text-white duration-200">
             <Link to="about" smooth={true} duration={600}>
-              About
+              {i18n.t('header.nav.about')}
             </Link>
           </li>
           <li className="cursor-pointer hover:text-white duration-200">
             <Link to="skills" smooth={true} duration={600}>
-              Skills
+              {i18n.t('header.nav.skills')}{' '}
             </Link>
           </li>
           <li className="cursor-pointer hover:text-white duration-200">
             <Link to="works" smooth={true} duration={600}>
-              Works
+              {i18n.t('header.nav.works')}
             </Link>
           </li>
           <li className="cursor-pointer duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white py-1.5 px-2.5 rounded">
             <Link to="contact" smooth={true} duration={600}>
-              Contact
+              {i18n.t('header.nav.contact')}
             </Link>
           </li>
         </ul>
       </div>
 
       <div onClick={handleClick} className="flex md:hidden z-10">
-        <FaBars size={40} />
+        <FaBars size={37} />
       </div>
 
       <div
@@ -66,14 +150,14 @@ const Navbar = () => {
       >
         <FaTimes
           onClick={handleClick}
-          size={45}
+          size={44}
           className="absolute top-5 right-5"
         />
 
         <ul className="h-72 flex flex-col justify-between items-center text-3xl">
           <li>
             <Link onClick={handleClick} to="about" smooth={true} duration={600}>
-              About
+              {i18n.t('header.nav.about')}
             </Link>
           </li>
           <li>
@@ -83,12 +167,12 @@ const Navbar = () => {
               smooth={true}
               duration={600}
             >
-              Skills
+              {i18n.t('header.nav.skills')}
             </Link>
           </li>
           <li>
             <Link onClick={handleClick} to="works" smooth={true} duration={600}>
-              Works
+              {i18n.t('header.nav.works')}
             </Link>
           </li>
           <li>
@@ -98,7 +182,7 @@ const Navbar = () => {
               smooth={true}
               duration={600}
             >
-              Contact
+              {i18n.t('header.nav.contact')}
             </Link>
           </li>
         </ul>
@@ -163,7 +247,8 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
             >
-              Resume <BsFillPersonLinesFill size={30} />
+              {i18n.t('header.socialMedia.resume')}{' '}
+              <BsFillPersonLinesFill size={30} />
             </a>
           </li>
         </ul>

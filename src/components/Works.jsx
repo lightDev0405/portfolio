@@ -5,6 +5,7 @@ import SampleDesktopImg from '../assets/images/works/sample-project-desktop.png'
 import SampleMobileImg from '../assets/images/works/sample-project.png';
 
 import Slider from 'react-slick';
+import { i18n } from '../locale/i18n';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -26,12 +27,10 @@ const Works = () => {
       <div className="flex flex-col w-full h-full max-w-[900px] mx-auto py-[16px] px-[32px]">
         <div className="pb-[40px]">
           <h1 className="text-3xl md:text-4xl border-b-4 inline-block border-theme-white mb-[10px]">
-            Works
+            {i18n.t('worksSection.sectionName')}
           </h1>
           <h2 className="text-base md:text-lg">
-            I created and launched complete projects. carrying the development
-            of its' front-end codebases and collaborating with designers. Here
-            are some examples of my work.
+            {i18n.t('worksSection.intro')}
           </h2>
         </div>
 
@@ -42,8 +41,8 @@ const Works = () => {
                 <WorkElement
                   img={CineflixMobileImg}
                   alt="cineflix"
-                  name="Cineflix"
-                  description="Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites."
+                  name={`${i18n.t('worksSection.cineflix.name')}`}
+                  description={`${i18n.t('worksSection.cineflix.description')}`}
                   tools="React, TailwindCSS, Firebase"
                   link="https://cineflix-ten.vercel.app/"
                   code="https://github.com/tiagocreator/cineflix"
@@ -55,6 +54,7 @@ const Works = () => {
                   alt=""
                   name="Sample Project"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  tools="tool 1, tool 2, tool 3"
                   link="#"
                   code="#"
                   reverse
@@ -66,6 +66,7 @@ const Works = () => {
                   alt=""
                   name="Sample Project"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  tools="tool 1, tool 2, tool 3"
                   link="#"
                   code="#"
                   reverse
@@ -77,6 +78,7 @@ const Works = () => {
                   alt=""
                   name="Sample Project"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+                  tools="tool 1, tool 2, tool 3"
                   link="#"
                   code="#"
                   reverse
@@ -88,8 +90,8 @@ const Works = () => {
             <WorkElement
               img={CineflixDesktopImg}
               alt="cineflix"
-              name="Cineflix"
-              description="Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites."
+              name={`${i18n.t('worksSection.cineflix.name')}`}
+              description={`${i18n.t('worksSection.cineflix.description')}`}
               tools="React, TailwindCSS, Firebase"
               link="https://cineflix-ten.vercel.app/"
               code="https://github.com/tiagocreator/cineflix"
@@ -99,6 +101,7 @@ const Works = () => {
               alt=""
               name="Sample Project"
               description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+              tools="tool 1, tool 2, tool 3"
               link="#"
               code="#"
               reverse
@@ -108,6 +111,7 @@ const Works = () => {
               alt=""
               name="Sample Project"
               description="Quis varius quam quisque id diam. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Purus viverra accumsan in nisl. Enim sit amet venenatis urna cursus eget."
+              tools="tool 1, tool 2, tool 3"
               link="#"
               code="#"
             />
@@ -116,6 +120,7 @@ const Works = () => {
               alt=""
               name="Sample Project"
               description="Libero enim sed faucibus turpis. Eu nisl nunc mi ipsum. Pretium lectus quam id leo in vitae turpis. Cursus turpis massa tincidunt dui ut. Ultricies lacus sed turpis tincidunt. Bibendum neque egestas congue quisque."
+              tools="tool 1, tool 2, tool 3"
               link="#"
               code="#"
               reverse

@@ -7,7 +7,7 @@ import {
   SiFigma,
   SiMaterialui,
 } from 'react-icons/si';
-
+import { i18n } from '../locale/i18n';
 import { BsBootstrapFill } from 'react-icons/bs';
 
 const Skills = () => {
@@ -16,10 +16,10 @@ const Skills = () => {
       <div className="max-w-[900px] mx-auto p-8">
         <div>
           <h1 className="text-3xl md:text-4xl border-b-[4px] inline-block border-theme-white mb-[15px]">
-            Skills
+            {i18n.t('skillsSection.sectionName')}
           </h1>
           <h2 className="text-base md:text-lg">
-            Some of the main technologies I'm currently using in my toolset.
+            {i18n.t('skillsSection.intro')}
           </h2>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-4 text-center gap-5 py-10">

@@ -13,14 +13,22 @@ const content = {
         },
       },
       aboutSection: {
-        intro: 'Olá, sou Tiago Leite, desenvolvedor front-end brasileiro',
-        smallDescription:
-          'Eu crio sites e aplicativos da web atrativos, responsivos e funcionais que vão prender a atenção dos seus usuários',
+        intro: 'Olá, eu sou Tiago Leite.',
+        smallDescription: 'Eu sou um',
+        welcome: 'Bem vindo{a} ao meu portfolio',
+        animatedTexts: {
+          textOne: 'programador front-end',
+          textTwo: 'desenvolvedor web',
+          textThree: 'programador freelancer',
+          textFour: 'designer web',
+          textFive: 'desenvolvedor React',
+          textSix: 'programador JavaScript',
+        },
         description:
           'Sou um desenvolvedor front-end autodidata com uma variedade de projetos incríveis. Eu me dedico a desenvolver sites e aplicativos web que sejam objetivos, funcionais e atraentes em seu visual. Sempre baseado nos princípios de usabilidade e navegabilidade.',
         buttons: {
           work: 'Projetos',
-          hire: 'Contratar',
+          hire: 'Contato',
         },
       },
       skillsSection: {

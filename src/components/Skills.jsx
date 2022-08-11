@@ -13,12 +13,12 @@ import { BsBootstrapFill } from 'react-icons/bs';
 const Skills = () => {
   return (
     <section name="skills" className="w-full pt-12 md:pt-16">
-      <div className="max-w-[900px] mx-auto p-8">
+      <div className="max-w-[900px] mx-auto p-4 md:p-8">
         <div>
-          <h1 className="text-3xl md:text-4xl border-b-[4px] inline-block border-theme-white mb-[15px]">
+          <h1 className="text-2xl md:text-3xl border-b-[4px] inline-block border-theme-white mb-4 pb-1">
             {i18n.t('skillsSection.sectionName')}
           </h1>
-          <h2 className="text-base md:text-lg">
+          <h2 className="text-base md:text-xl">
             {i18n.t('skillsSection.intro')}
           </h2>
         </div>

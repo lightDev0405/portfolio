@@ -24,12 +24,12 @@ const Works = () => {
       name="works"
       className="pb-[70px] md:pb-[80px] w-full text-theme-white"
     >
-      <div className="flex flex-col w-full h-full max-w-[900px] mx-auto py-[16px] px-[32px]">
-        <div className="pb-[40px]">
-          <h1 className="text-3xl md:text-4xl border-b-4 inline-block border-theme-white mb-[10px]">
+      <div className="flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8">
+        <div className="pb-10">
+          <h1 className="text-2xl md:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1">
             {i18n.t('worksSection.sectionName')}
           </h1>
-          <h2 className="text-base md:text-lg">
+          <h2 className="text-base md:text-xl">
             {i18n.t('worksSection.intro')}
           </h2>
         </div>

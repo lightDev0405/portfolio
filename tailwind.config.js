@@ -29,6 +29,11 @@ module.exports = {
             transform: 'rotate(-360deg)',
           },
         },
+        cursorBlink: {
+          '0%': {
+            opacity: 0,
+          },
+        },
       },
       animation: {
         travelOrbit10: 'travelOrbit 10s infinite linear',
@@ -41,6 +46,7 @@ module.exports = {
         unrotate6: 'unrotate 6s infinite linear',
         unrotate4: 'unrotate 4s infinite linear',
         unrotate2: 'unrotate 2s infinite linear',
+        cursorBlink: 'cursorBlink 1.5s steps(2) infinite',
       },
     },
   },

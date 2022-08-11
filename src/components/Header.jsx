@@ -1,6 +1,12 @@
 import React, { useState } from 'react';
 import Brackets from '../assets/images/logo/brackets-dark.png';
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaExchangeAlt,
+} from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
 import { Link } from 'react-scroll';
@@ -48,18 +54,103 @@ const Navbar = () => {
         </div>
       </Link>
 
+      {/* Mobile Menu */}
+      <div
+        className={
+          !nav
+            ? 'hidden'
+            : 'w-full h-screen md:hidden flex flex-col justify-between items-center fixed inset-0 bg-theme-black py-28 z-20'
+        }
+      >
+        <FaTimes
+          onClick={handleClick}
+          size={44}
+          className="absolute top-5 right-5"
+        />
+
+        <ul className="h-60 flex flex-col justify-between items-center text-3xl">
+          <li>
+            <Link onClick={handleClick} to="about" smooth={true} duration={600}>
+              {i18n.t('header.nav.about')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={handleClick}
+              to="skills"
+              smooth={true}
+              duration={600}
+            >
+              {i18n.t('header.nav.skills')}
+            </Link>
+          </li>
+          <li>
+            <Link onClick={handleClick} to="works" smooth={true} duration={600}>
+              {i18n.t('header.nav.works')}
+            </Link>
+          </li>
+          <li>
+            <Link
+              onClick={handleClick}
+              to="contact"
+              smooth={true}
+              duration={600}
+            >
+              {i18n.t('header.nav.contact')}
+            </Link>
+          </li>
+        </ul>
+
+        <div className="flex items-center justify-center text-5xl">
+          <button
+            className="w-auto h-auto"
+            value="pt-BR"
+            onClick={changeLocale}
+          >
+            <span className="fi fi-br -z-10"></span>
+          </button>
+          <FaExchangeAlt className="text-2xl mx-8" />
+          <button
+            className="w-auto h-auto"
+            value="en-US"
+            onClick={changeLocale}
+          >
+            <span className="fi fi-us -z-10"></span>
+          </button>
+        </div>
+        <ul className="w-[300px] flex justify-between items-center">
+          <li className="p-2.5 bg-[#2867B2] rounded">
+            <a href={social.linkedin} target="_blank" rel="noreferrer">
+              <FaLinkedin size={42} />
+            </a>
+          </li>
+          <li className="p-2.5 bg-[#1B1F23] rounded">
+            <a href={social.github} target="_blank" rel="noreferrer">
+              <FaGithub size={40} />
+            </a>
+          </li>
+          <li className="p-2.5 bg-[#e22211] rounded">
+            <a href={social.email}>
+              <HiOutlineMail size={40} />
+            </a>
+          </li>
+          <li className="p-2.5 bg-[#4E535E] rounded">
+            <a href="/">
+              <BsFillPersonLinesFill size={40} />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Desktop Menu */}
       <div className="hidden md:flex items-center justify-center">
-        <div className="h-full mr-4">
+        <div className="h-full mr-8">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex justify-center items-center w-full rounded-md border border-theme-white shadow-sm px-2 py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100">
-                {CURRENT_KEY === 'pt-BR' ? (
-                  <span className="fi fi-br"></span>
-                ) : (
-                  <span className="fi fi-us"></span>
-                )}
+              <Menu.Button className="inline-flex justify-center items-center w-full rounded border border-theme-white shadow-sm px-2 py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100">
+                {CURRENT_KEY === 'pt-BR' ? 'PT' : 'EN'}
                 <BsChevronDown
-                  className="-mr-1 ml-1 text-sm"
+                  className="-mr-1 ml-0.5 text-sm"
                   aria-hidden="true"
                 />
               </Menu.Button>
@@ -141,75 +232,7 @@ const Navbar = () => {
         <FaBars size={37} />
       </div>
 
-      <div
-        className={
-          !nav
-            ? 'hidden'
-            : 'w-full h-screen md:hidden flex flex-col justify-between items-center fixed inset-0 bg-theme-black py-28 z-20'
-        }
-      >
-        <FaTimes
-          onClick={handleClick}
-          size={44}
-          className="absolute top-5 right-5"
-        />
-
-        <ul className="h-72 flex flex-col justify-between items-center text-3xl">
-          <li>
-            <Link onClick={handleClick} to="about" smooth={true} duration={600}>
-              {i18n.t('header.nav.about')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to="skills"
-              smooth={true}
-              duration={600}
-            >
-              {i18n.t('header.nav.skills')}
-            </Link>
-          </li>
-          <li>
-            <Link onClick={handleClick} to="works" smooth={true} duration={600}>
-              {i18n.t('header.nav.works')}
-            </Link>
-          </li>
-          <li>
-            <Link
-              onClick={handleClick}
-              to="contact"
-              smooth={true}
-              duration={600}
-            >
-              {i18n.t('header.nav.contact')}
-            </Link>
-          </li>
-        </ul>
-        <ul className="w-[300px] flex justify-between items-center">
-          <li className="p-2.5 bg-[#2867B2] rounded">
-            <a href={social.linkedin} target="_blank" rel="noreferrer">
-              <FaLinkedin size={42} />
-            </a>
-          </li>
-          <li className="p-2.5 bg-[#1B1F23] rounded">
-            <a href={social.github} target="_blank" rel="noreferrer">
-              <FaGithub size={40} />
-            </a>
-          </li>
-          <li className="p-2.5 bg-[#e22211] rounded">
-            <a href={social.email}>
-              <HiOutlineMail size={40} />
-            </a>
-          </li>
-          <li className="p-2.5 bg-[#4E535E] rounded">
-            <a href="/">
-              <BsFillPersonLinesFill size={40} />
-            </a>
-          </li>
-        </ul>
-      </div>
-
+      {/* Sidebar */}
       <div className="hidden lg:flex fixed flex-col top-[35vh] left-0">
         <ul>
           <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#2867B2]">

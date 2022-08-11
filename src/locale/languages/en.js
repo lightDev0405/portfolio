@@ -13,14 +13,22 @@ const content = {
         },
       },
       aboutSection: {
-        intro: "Hello, I'm Tiago Leite, a brazillian front-end developer",
-        smallDescription:
-          'I create beautiful, responsive and efficient websites and web aplications your users will love',
+        intro: "Hello, I'm Tiago Leite.",
+        smallDescription: "I'm a",
+        welcome: 'Welcome to my portfolio',
+        animatedTexts: {
+          textOne: 'front-end developer',
+          textTwo: 'web developer',
+          textThree: 'freelancer developer',
+          textFour: 'web designer',
+          textFive: 'React developer',
+          textSix: 'JavasScript developer',
+        },
         description:
           "I'm a self-taught front-end developer with an array of amazing projects. I dedicate myself to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
         buttons: {
           work: 'View Work',
-          hire: 'Hire Me',
+          hire: 'Contact',
         },
       },
       skillsSection: {

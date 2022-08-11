@@ -25,7 +25,7 @@ const Skills = () => {
           <h1 className="text-2xl md:text-3xl border-b-[4px] inline-block border-theme-white mb-4 pb-1">
             {i18n.t('skillsSection.sectionName')}
           </h1>
-          <h2 className="text-base md:text-xl">
+          <h2 className="text-base sm:text-lg md:text-xl">
             {i18n.t('skillsSection.intro')}
           </h2>
         </div>

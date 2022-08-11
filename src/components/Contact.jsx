@@ -8,7 +8,9 @@ const Contact = () => {
         <h1 className="text-2xl md:text-4xl border-b-4 inline-block border-theme-white mb-4 pb-1">
           {i18n.t('contactSection.sectionName')}
         </h1>
-        <p className="text-base md:text-xl">{i18n.t('contactSection.intro')}</p>
+        <p className="text-base sm:text-lg md:text-xl">
+          {i18n.t('contactSection.intro')}
+        </p>
         <form
           className="flex flex-col w-full max-w-[600px] mx-auto pt-12"
           action="https://getform.io/f/8010a764-5271-4d08-b8af-58a7d3654b1e"

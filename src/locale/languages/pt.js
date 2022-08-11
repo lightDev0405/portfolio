@@ -35,6 +35,7 @@ const content = {
         sectionName: 'Skills',
         intro:
           'Algumas das principais tecnologias que estou usando atualmente em meu conjunto de ferramentas.',
+        button: 'Mostrar Mais',
       },
       worksSection: {
         sectionName: 'Projetos',

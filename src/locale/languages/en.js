@@ -35,6 +35,7 @@ const content = {
         sectionName: 'Skills',
         intro:
           "Some of the main technologies I'm currently using in my toolset.",
+        button: 'Show More'
       },
       worksSection: {
         sectionName: 'Works',

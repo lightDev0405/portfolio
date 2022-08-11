@@ -24,7 +24,6 @@ const classNames = (...classes) => {
 };
 
 const changeLocale = (e) => {
-  console.log(e.target.value);
   localStorage.setItem(I18N_STORAGE_KEY, e.target.value);
   if (CURRENT_KEY !== e.target.value) {
     window.location.reload();

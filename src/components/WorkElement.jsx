@@ -99,7 +99,7 @@ const WorkElement = ({
           </div>
           <div className="flex justify-between items-center mt-4 sm:w-[80px] md:w-[264px]">
             <a
-              className="sm:h-9 sm:w-9 md:h-8 md:w-32 flex items-center justify-around bg-theme-blue-50 sm:rounded-full md:rounded  hover:-translate-y-[2px] duration-300"
+              className="sm:h-9 sm:w-9 md:h-8 md:w-32 flex items-center justify-around bg-theme-blue-50 hover:text-white active:text-white hover:bg-theme-blue-100 active:bg-theme-blue-100 sm:rounded-full md:rounded  hover:-translate-y-[2px] duration-300"
               href={link}
               target="_blank"
               rel="noreferrer"

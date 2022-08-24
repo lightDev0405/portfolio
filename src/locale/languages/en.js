@@ -35,7 +35,7 @@ const content = {
         sectionName: 'Skills',
         intro:
           "Some of the main technologies I'm currently using in my toolset.",
-        button: 'Show More'
+        button: 'Show More',
       },
       worksSection: {
         sectionName: 'Works',
@@ -53,6 +53,11 @@ const content = {
           name: 'Cineflix',
           description:
             'Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites.',
+        },
+        classicGames: {
+          name: 'Classic Games',
+          description:
+            'Website of my favorite classic games that I recreated in a more simplified way using HTML, CSS and JavaScript. My goal with this is to learn the logic and the syntax of JavaScript.',
         },
       },
       contactSection: {

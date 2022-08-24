@@ -1,8 +1,10 @@
 import WorkElement from './WorkElement';
-import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
 import CineflixMobileImg from '../assets/images/works/cineflix.jpg';
-import SampleDesktopImg from '../assets/images/works/sample-project-desktop.png';
+import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
+import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg';
+import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
 import SampleMobileImg from '../assets/images/works/sample-project.png';
+import SampleDesktopImg from '../assets/images/works/sample-project-desktop.png';
 
 import Slider from 'react-slick';
 import { i18n } from '../locale/i18n';
@@ -50,13 +52,15 @@ const Works = () => {
               </div>
               <div>
                 <WorkElement
-                  img={SampleMobileImg}
-                  alt=""
-                  name="Sample Project"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  tools="tool 1, tool 2, tool 3"
-                  link="#"
-                  code="#"
+                  img={JsClassicGamesMobileImg}
+                  alt="javascript classic games website"
+                  name={`${i18n.t('worksSection.classicGames.name')}`}
+                  description={`${i18n.t(
+                    'worksSection.classicGames.description'
+                  )}`}
+                  tools="HTML, CSS, JavaScript"
+                  link="https://js-classic-games.vercel.app/"
+                  code="https://github.com/tiagocreator/js-classic-games"
                   reverse
                 />
               </div>
@@ -89,7 +93,7 @@ const Works = () => {
           <div className="hidden sm:flex flex-col">
             <WorkElement
               img={CineflixDesktopImg}
-              alt="cineflix"
+              alt="cineflix movie database website"
               name={`${i18n.t('worksSection.cineflix.name')}`}
               description={`${i18n.t('worksSection.cineflix.description')}`}
               tools="React, TailwindCSS, Firebase"
@@ -97,13 +101,13 @@ const Works = () => {
               code="https://github.com/tiagocreator/cineflix"
             />
             <WorkElement
-              img={SampleDesktopImg}
-              alt=""
-              name="Sample Project"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-              tools="tool 1, tool 2, tool 3"
-              link="#"
-              code="#"
+              img={JsClassicGamesDesktopImg}
+              alt="javascript classic games website"
+              name={`${i18n.t('worksSection.classicGames.name')}`}
+              description={`${i18n.t('worksSection.classicGames.description')}`}
+              tools="HTML, CSS, JavaScript"
+              link="https://js-classic-games.vercel.app/"
+              code="https://github.com/tiagocreator/js-classic-games"
               reverse
             />
             <WorkElement

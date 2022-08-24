@@ -54,6 +54,11 @@ const content = {
           description:
             'Banco de dados de filmes imitando o visual do Netflix. O projeto conta com integração com o Firebase para criar uma conta, fazer login e salvar os filmes nos favoritos.',
         },
+        classicGames: {
+          name: 'Jogos Clássicos',
+          description:
+            'Website dos meus jogos clássicos favoritos que eu recriei de forma mais simplificada usando HTML, CSS e JavaScript. Meu objetivo com isso é aprender a lógica e a sintaxe do JavaScript.',
+        },
       },
       contactSection: {
         sectionName: 'Contato',

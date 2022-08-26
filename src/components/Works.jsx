@@ -3,6 +3,8 @@ import CineflixMobileImg from '../assets/images/works/cineflix.jpg';
 import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
 import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg';
 import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
+import TodoSorrisoMobileImg from '../assets/images/works/todosorriso.jpg';
+import TodoSorrisoDesktopImg from '../assets/images/works/todosorriso-desktop.jpg';
 import SampleMobileImg from '../assets/images/works/sample-project.png';
 import SampleDesktopImg from '../assets/images/works/sample-project-desktop.png';
 
@@ -61,7 +63,19 @@ const Works = () => {
                   tools="HTML, CSS, JavaScript"
                   link="https://js-classic-games.vercel.app/"
                   code="https://github.com/tiagocreator/js-classic-games"
-                  reverse
+                />
+              </div>
+              <div>
+                <WorkElement
+                  img={TodoSorrisoMobileImg}
+                  alt="todo sorriso dental clinic website"
+                  name={`${i18n.t('worksSection.todoSorriso.name')}`}
+                  description={`${i18n.t(
+                    'worksSection.todoSorriso.description'
+                  )}`}
+                  tools="HTML, CSS, JavaScript"
+                  link="https://todosorriso.vercel.app/"
+                  code="https://github.com/tiagocreator/todosorriso"
                 />
               </div>
               <div>
@@ -73,19 +87,6 @@ const Works = () => {
                   tools="tool 1, tool 2, tool 3"
                   link="#"
                   code="#"
-                  reverse
-                />
-              </div>
-              <div>
-                <WorkElement
-                  img={SampleMobileImg}
-                  alt=""
-                  name="Sample Project"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  tools="tool 1, tool 2, tool 3"
-                  link="#"
-                  code="#"
-                  reverse
                 />
               </div>
             </Slider>
@@ -111,13 +112,13 @@ const Works = () => {
               reverse
             />
             <WorkElement
-              img={SampleDesktopImg}
-              alt=""
-              name="Sample Project"
-              description="Quis varius quam quisque id diam. Eget aliquet nibh praesent tristique magna sit amet purus gravida. Purus viverra accumsan in nisl. Enim sit amet venenatis urna cursus eget."
-              tools="tool 1, tool 2, tool 3"
-              link="#"
-              code="#"
+              img={TodoSorrisoDesktopImg}
+              alt="todo sorriso dental clinic website"
+              name={`${i18n.t('worksSection.todoSorriso.name')}`}
+              description={`${i18n.t('worksSection.todoSorriso.description')}`}
+              tools="HTML, CSS, JavaScript"
+              link="https://todosorriso.vercel.app/"
+              code="https://github.com/tiagocreator/todosorriso"
             />
             <WorkElement
               img={SampleDesktopImg}

@@ -59,6 +59,11 @@ const content = {
           description:
             'Website of my favorite classic games that I recreated in a more simplified way using HTML, CSS and JavaScript. My goal with this is to learn the logic and the syntax of JavaScript.',
         },
+        todoSorriso: {
+          name: 'Todo Sorriso',
+          description:
+            'Todo Sorriso is a responsive dental clinic website, made in HTML, CSS and JavaScript, without the use of frameworks.',
+        },
       },
       contactSection: {
         sectionName: 'Contact',

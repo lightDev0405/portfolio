@@ -59,6 +59,11 @@ const content = {
           description:
             'Website dos meus jogos clássicos favoritos que eu recriei de forma mais simplificada usando HTML, CSS e JavaScript. Meu objetivo com isso é aprender a lógica e a sintaxe do JavaScript.',
         },
+        todoSorriso: {
+          name: 'Todo Sorriso',
+          description:
+            'Todo Sorriso é um site responsivo de clínica odontológica, feito em HTML, CSS e JavaScript, sem o uso de frameworks.',
+        },
       },
       contactSection: {
         sectionName: 'Contato',

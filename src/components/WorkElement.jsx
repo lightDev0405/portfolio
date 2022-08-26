@@ -17,7 +17,7 @@ const WorkElement = ({
       {/* Mobile */}
       <div className="group relative w-[92%] mx-auto flex flex-col justify-center items-center sm:hidden">
         <div className="mx-[-1px] -z-10 absolute top-0 left-0 w-full ">
-          <img src={img} alt={alt} className="rounded min-h-full" />
+          <img src={img} alt={alt} className="rounded w-full h-full" />
           <div className="rounded absolute top-0 left-0 z-20 w-full h-full bg-[rgba(0,0,0,0.2)] group-hover:bg-[rgba(0,0,0,0.9)] group-active:bg-[rgba(0,0,0,0.9)] group-focus:bg-[rgba(0,0,0,0.9)] duration-500"></div>
         </div>
         <div className="mx-[1px] min-h-[450px] flex flex-col justify-center align-center">

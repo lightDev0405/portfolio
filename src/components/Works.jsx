@@ -5,8 +5,8 @@ import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg
 import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
 import TodoSorrisoMobileImg from '../assets/images/works/todosorriso.jpg';
 import TodoSorrisoDesktopImg from '../assets/images/works/todosorriso-desktop.jpg';
-import SampleMobileImg from '../assets/images/works/sample-project.png';
-import SampleDesktopImg from '../assets/images/works/sample-project-desktop.png';
+import TaskoMobileImg from '../assets/images/works/tasko.jpg';
+import TaskoDesktopImg from '../assets/images/works/tasko-desktop.jpg';
 
 import Slider from 'react-slick';
 import { i18n } from '../locale/i18n';
@@ -80,13 +80,13 @@ const Works = () => {
               </div>
               <div>
                 <WorkElement
-                  img={SampleMobileImg}
-                  alt=""
-                  name="Sample Project"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-                  tools="tool 1, tool 2, tool 3"
-                  link="#"
-                  code="#"
+                  img={TaskoMobileImg}
+                  alt="tasko a todo task and pomodoro web app"
+                  name="Tasko"
+                  description="Tasko é um aplicativo web CRUD de lista de tarefas e cronômetro pomodoro feito em React e styled components."
+                  tools="React, JavaScript, styled-components"
+                  link="https://tasko-nine.vercel.app/"
+                  code="https://github.com/tiagocreator/tasko"
                 />
               </div>
             </Slider>
@@ -121,13 +121,13 @@ const Works = () => {
               code="https://github.com/tiagocreator/todosorriso"
             />
             <WorkElement
-              img={SampleDesktopImg}
-              alt=""
-              name="Sample Project"
-              description="Libero enim sed faucibus turpis. Eu nisl nunc mi ipsum. Pretium lectus quam id leo in vitae turpis. Cursus turpis massa tincidunt dui ut. Ultricies lacus sed turpis tincidunt. Bibendum neque egestas congue quisque."
-              tools="tool 1, tool 2, tool 3"
-              link="#"
-              code="#"
+              img={TaskoDesktopImg}
+              alt="tasko a todo task and pomodoro web app"
+              name={`${i18n.t('worksSection.tasko.name')}`}
+              description={`${i18n.t('worksSection.tasko.description')}`}
+              tools="React, JavaScript, styled-components"
+              link="https://tasko-nine.vercel.app/"
+              code="https://github.com/tiagocreator/tasko"
               reverse
             />
           </div>

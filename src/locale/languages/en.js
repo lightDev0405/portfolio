@@ -64,6 +64,11 @@ const content = {
           description:
             'Todo Sorriso is a responsive dental clinic website, made in HTML, CSS and JavaScript, without the use of frameworks.',
         },
+        tasko: {
+          name: 'tasko',
+          description:
+            'tasko is a CRUD task list and pomodoro timer web application made with React and styled components.',
+        },
       },
       contactSection: {
         sectionName: 'Contact',

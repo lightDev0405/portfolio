@@ -64,6 +64,11 @@ const content = {
           description:
             'Todo Sorriso é um site responsivo de clínica odontológica, feito em HTML, CSS e JavaScript, sem o uso de frameworks.',
         },
+        tasko: {
+          name: 'tasko',
+          description:
+            'tasko é um aplicativo web CRUD de lista de tarefas e cronômetro pomodoro feito em React e styled components.',
+        },
       },
       contactSection: {
         sectionName: 'Contato',

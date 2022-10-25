@@ -24,7 +24,7 @@ const Sidebar = () => {
       </li>
       <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#1B1F23]">
         <a
-          className="flex justify-around items-center w-full "
+          className="flex justify-around items-center w-full"
           href={social.github}
           target="_blank"
           rel="noreferrer"
@@ -34,15 +34,15 @@ const Sidebar = () => {
       </li>
       <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#e22211]">
         <a
-          className="flex justify-around items-center w-full "
+          className="flex justify-around items-center w-full"
           href={social.email}
         >
-          Email <HiOutlineMail size={30} />
+          Email <HiOutlineMail className="ml-4" size={30} />
         </a>
       </li>
       <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#4E535E]">
         <a
-          className="flex justify-around items-center w-full "
+          className="flex justify-around items-center w-full"
           href="/"
           target="_blank"
           rel="noreferrer"

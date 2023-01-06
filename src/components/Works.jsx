@@ -83,7 +83,7 @@ const Works = () => {
                   img={TaskoMobileImg}
                   alt="tasko a todo task and pomodoro web app"
                   name="Tasko"
-                  description="Tasko é um aplicativo web CRUD de lista de tarefas e cronômetro pomodoro feito em React e styled components."
+                  description={`${i18n.t('worksSection.tasko.description')}`}
                   tools="React, JavaScript, styled-components"
                   link="https://tasko-nine.vercel.app/"
                   code="https://github.com/tiagocreator/tasko"
@@ -91,6 +91,7 @@ const Works = () => {
               </div>
             </Slider>
           </div>
+
           <div className="hidden sm:flex flex-col">
             <WorkElement
               img={CineflixDesktopImg}

@@ -7,6 +7,8 @@ import TodoSorrisoMobileImg from '../assets/images/works/todosorriso.jpg';
 import TodoSorrisoDesktopImg from '../assets/images/works/todosorriso-desktop.jpg';
 import TaskoMobileImg from '../assets/images/works/tasko.jpg';
 import TaskoDesktopImg from '../assets/images/works/tasko-desktop.jpg';
+import HypeCamperDesktopImg from '../assets/images/works/hype-camper-desktop.jpg';
+import HypeCamperMobileImg from '../assets/images/works/hype-camper.jpg';
 
 import Slider from 'react-slick';
 import { i18n } from '../locale/i18n';
@@ -43,13 +45,15 @@ const Works = () => {
             <Slider {...settings}>
               <div>
                 <WorkElement
-                  img={CineflixMobileImg}
-                  alt="cineflix"
-                  name={`${i18n.t('worksSection.cineflix.name')}`}
-                  description={`${i18n.t('worksSection.cineflix.description')}`}
-                  tools="React, TailwindCSS, Firebase"
-                  link="https://cineflix-ten.vercel.app/"
-                  code="https://github.com/tiagocreator/cineflix"
+                  img={HypeCamperMobileImg}
+                  alt="hype camper camping locations website"
+                  name={`${i18n.t('worksSection.hypeCamper.name')}`}
+                  description={`${i18n.t(
+                    'worksSection.hypeCamper.description'
+                  )}`}
+                  tools="Node, Express, MongoDB"
+                  link="https://hype-camper.herokuapp.com/"
+                  code="https://github.com/tiagocreator/hype-camper"
                 />
               </div>
               <div>
@@ -80,6 +84,17 @@ const Works = () => {
               </div>
               <div>
                 <WorkElement
+                  img={CineflixMobileImg}
+                  alt="cineflix"
+                  name={`${i18n.t('worksSection.cineflix.name')}`}
+                  description={`${i18n.t('worksSection.cineflix.description')}`}
+                  tools="React, TailwindCSS, Firebase"
+                  link="https://cineflix-ten.vercel.app/"
+                  code="https://github.com/tiagocreator/cineflix"
+                />
+              </div>
+              <div>
+                <WorkElement
                   img={TaskoMobileImg}
                   alt="tasko a todo task and pomodoro web app"
                   name="Tasko"
@@ -94,13 +109,13 @@ const Works = () => {
 
           <div className="hidden sm:flex flex-col">
             <WorkElement
-              img={CineflixDesktopImg}
-              alt="cineflix movie database website"
-              name={`${i18n.t('worksSection.cineflix.name')}`}
-              description={`${i18n.t('worksSection.cineflix.description')}`}
-              tools="React, TailwindCSS, Firebase"
-              link="https://cineflix-ten.vercel.app/"
-              code="https://github.com/tiagocreator/cineflix"
+              img={HypeCamperDesktopImg}
+              alt="hype camper camping locations website"
+              name={`${i18n.t('worksSection.hypeCamper.name')}`}
+              description={`${i18n.t('worksSection.hypeCamper.description')}`}
+              tools="Node, Express, MongoDB"
+              link="https://hype-camper.herokuapp.com/"
+              code="https://github.com/tiagocreator/hype-camper"
             />
             <WorkElement
               img={JsClassicGamesDesktopImg}
@@ -122,6 +137,16 @@ const Works = () => {
               code="https://github.com/tiagocreator/todosorriso"
             />
             <WorkElement
+              img={CineflixDesktopImg}
+              alt="cineflix movie database website"
+              name={`${i18n.t('worksSection.cineflix.name')}`}
+              description={`${i18n.t('worksSection.cineflix.description')}`}
+              tools="React, TailwindCSS, Firebase"
+              link="https://cineflix-ten.vercel.app/"
+              code="https://github.com/tiagocreator/cineflix"
+              reverse
+            />
+            <WorkElement
               img={TaskoDesktopImg}
               alt="tasko a todo task and pomodoro web app"
               name={`${i18n.t('worksSection.tasko.name')}`}
@@ -129,7 +154,6 @@ const Works = () => {
               tools="React, JavaScript, styled-components"
               link="https://tasko-nine.vercel.app/"
               code="https://github.com/tiagocreator/tasko"
-              reverse
             />
           </div>
         </>

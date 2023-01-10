@@ -17,10 +17,10 @@ const content = {
         smallDescription: 'Eu sou um',
         welcome: 'Bem vindo{a} ao meu portfolio',
         animatedTexts: {
-          textOne: 'programador front-end',
+          textOne: 'programador full-stack',
           textTwo: 'desenvolvedor web',
           textThree: 'programador freelancer',
-          textFour: 'designer web',
+          textFour: 'full-stack MERN',
           textFive: 'desenvolvedor React',
           textSix: 'programador JavaScript',
         },
@@ -35,7 +35,8 @@ const content = {
         sectionName: 'Skills',
         intro:
           'Algumas das principais tecnologias que estou usando atualmente em meu conjunto de ferramentas.',
-        button: 'Mostrar Mais',
+        showMore: 'Mostrar Mais',
+        showLess: 'Esconder',
       },
       worksSection: {
         sectionName: 'Projetos',
@@ -68,6 +69,11 @@ const content = {
           name: 'tasko',
           description:
             'tasko é um aplicativo web CRUD de lista de tarefas e cronômetro pomodoro feito em React e styled components.',
+        },
+        hypeCamper: {
+          name: 'Hype Camper',
+          description:
+            'Hype Camper é um site full stack de acampamentos feito em Node, Express e MongoDB onde o usuário pode criar uma conta, postar novos acampamentos, gerenciar e fazer reviews.',
         },
       },
       contactSection: {

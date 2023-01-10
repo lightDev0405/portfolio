@@ -1,5 +1,5 @@
-import { DiJavascript1, DiCss3, DiHtml5, DiReact, DiGit } from 'react-icons/di';
-import { CgFigma } from 'react-icons/cg';
+import { DiJavascript1, DiNodejsSmall, DiReact, DiGit } from 'react-icons/di';
+import { SiExpress, SiMongodb } from 'react-icons/si';
 import { useState } from 'react';
 
 const ReactSolarSystem = () => {
@@ -33,37 +33,37 @@ const ReactSolarSystem = () => {
         {/* Solar Orbit */}
         <div className="w-[82.5%] h-[82.5%] border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]">
           {/* Solar Planet */}
-          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(98,203,128,0.15)] border-[2px] border-[#62cb80] text-[#62cb80] text-[1.1rem] leading-[26px] animate-travelOrbit8 origin-[50%_597%] transition-all duration-[1s]">
+          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(98,203,128,0.15)] border-[2px] border-[#4da53f] text-[#4da53f] text-[1.1rem] leading-[26px] animate-travelOrbit8 origin-[50%_597%] transition-all duration-[1s]">
             {/* Icon */}
             <span className="animate-unrotate8">
-              <CgFigma />
+              <SiMongodb />
             </span>
           </div>
         </div>
         {/* Solar Orbit */}
         <div className="w-[65%] h-[65%] border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]">
           {/* Solar Planet */}
-          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(221,74,41,0.2)] border-[2px] border-[#dd4b29] text-[#dd4b29] text-[1rem] leading-[26px] animate-travelOrbit6 origin-[50%_480%] transition-all duration-[1s]">
+          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(145,145,145,0.2)] border-[2px] border-[#b1b1b1] text-[#b1b1b1] text-[1rem] leading-[26px] animate-travelOrbit6 origin-[50%_480%] transition-all duration-[1s]">
             {/* Icon */}
             <span className="animate-unrotate6">
-              <DiHtml5 />
+              <SiExpress />
             </span>
           </div>
         </div>
         {/* Solar Orbit */}
         <div className="w-[47.5%] h-[47.5%] border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]">
           {/* Solar Planet */}
-          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(43,76,221,0.15)] border-[2px] border-[#2b4bdd] text-[#2b4bdd] text-[1rem] leading-[26px] animate-travelOrbit4 origin-[50%_363%] transition-all duration-[1s]">
+          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(100,100,100,0.1)] border-[2px] border-[#4da53f] text-[#4da53f] text-[1.2rem] leading-[26px] animate-travelOrbit4 origin-[50%_363%] transition-all duration-[1s]">
             {/* Icon */}
             <span className="animate-unrotate4">
-              <DiCss3 />
+              <DiNodejsSmall />
             </span>
           </div>
         </div>
         {/* Solar Orbit */}
         <div className="w-[30%] h-[30%] border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]">
           {/* Solar Planet */}
-          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(109,218,251,0.1)] border-[2px] border-[#6ddafb] text-[#6ddafb] text-[1rem] leading-[26px] animate-travelOrbit2 origin-[50%_243%] transition-all duration-[1s]">
+          <div className="w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(109,218,251,0.1)] border-[2px] border-[#6ddafb] text-[#6ddafb] text-[1.1rem] leading-[26px] animate-travelOrbit2 origin-[50%_243%] transition-all duration-[1s]">
             {/* Icon */}
             <span className="animate-unrotate2">
               <DiReact />

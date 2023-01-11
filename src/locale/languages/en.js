@@ -86,6 +86,12 @@ const content = {
         },
         button: 'Send',
       },
+      toast: {
+        contact: {
+          success: 'Message sent successfully!',
+          error: 'Error! Please try again later.',
+        },
+      },
     },
   },
 };

@@ -86,6 +86,12 @@ const content = {
         },
         button: 'Enviar',
       },
+      toast: {
+        contact: {
+          success: 'Mensagem enviada com sucesso!',
+          error: 'Erro! Por favor, tente novamente mais tarde.',
+        },
+      },
     },
   },
 };

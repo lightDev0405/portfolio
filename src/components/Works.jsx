@@ -32,16 +32,16 @@ const Works = () => {
     >
       <div className="flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8">
         <div className="pb-10">
-          <h1 className="text-2xl md:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1">
+          <h1 className="text-2xl 2xl:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1">
             {i18n.t('worksSection.sectionName')}
           </h1>
-          <h2 className="text-base sm:text-lg md:text-xl">
+          <h2 className="text-base sm:text-lg 2xl:text-xl">
             {i18n.t('worksSection.intro')}
           </h2>
         </div>
 
         <>
-          <div className="mx-auto w-full max-w-[400px] sm:hidden">
+          <div className="mx-auto w-full max-w-[400px] md:hidden">
             <Slider {...settings}>
               <div>
                 <WorkElement
@@ -107,7 +107,7 @@ const Works = () => {
             </Slider>
           </div>
 
-          <div className="hidden sm:flex flex-col">
+          <div className="hidden md:flex flex-col">
             <WorkElement
               img={HypeCamperDesktopImg}
               alt="hype camper camping locations website"

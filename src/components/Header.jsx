@@ -46,11 +46,11 @@ const Navbar = () => {
       <Link to="about" smooth={true} duration={600}>
         <div className="group flex justify-center items-center select-none">
           <img
-            className="w-9 h-auto group-hover:rotate-[25deg] duration-300"
+            className="w-8 2xl:w-9 h-auto group-hover:rotate-[25deg] duration-300"
             src={Brackets}
             alt="logo"
           />
-          <h1 className="text-2xl md:text-3xl ml-4 font-bold">Tiago Leite</h1>
+          <h1 className="text-2xl 2xl:text-3xl ml-4 font-bold">Tiago Leite</h1>
         </div>
       </Link>
 
@@ -147,7 +147,7 @@ const Navbar = () => {
         <div className="h-full mr-8">
           <Menu as="div" className="relative inline-block text-left">
             <div>
-              <Menu.Button className="inline-flex justify-center items-center w-full rounded border border-theme-white shadow-sm px-2 py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100">
+              <Menu.Button className="inline-flex justify-center items-center w-full rounded border border-theme-white shadow-sm md:px-1.5 md:py-1.5 2xl:px-2 2xl:py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100">
                 {CURRENT_KEY === 'pt-BR' ? 'PT' : 'EN'}
                 <BsChevronDown
                   className="-mr-1 ml-0.5 text-sm"
@@ -204,7 +204,7 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </div>
-        <ul className="flex text-xl w-[330px] justify-between items-center">
+        <ul className="flex md:text-lg 2xl:text-xl w-[330px] justify-between items-center">
           <li className="cursor-pointer hover:text-white duration-200">
             <Link to="about" smooth={true} duration={600}>
               {i18n.t('header.nav.about')}
@@ -220,7 +220,7 @@ const Navbar = () => {
               {i18n.t('header.nav.works')}
             </Link>
           </li>
-          <li className="cursor-pointer duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white py-1.5 px-2.5 rounded">
+          <li className="cursor-pointer duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white md:py-[4px] 2xl:py-1.5 px-2.5 rounded">
             <Link to="contact" smooth={true} duration={600}>
               {i18n.t('header.nav.contact')}
             </Link>

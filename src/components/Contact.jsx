@@ -31,10 +31,10 @@ const Contact = () => {
   return (
     <section className="w-full pb-5 md:pb-9" name="contact">
       <div className="max-w-[900px] mx-auto px-8">
-        <h1 className="text-2xl md:text-4xl border-b-4 inline-block border-theme-white mb-4 pb-1">
+        <h1 className="text-2xl 2xl:text-4xl border-b-4 inline-block border-theme-white mb-4 pb-1">
           {i18n.t('contactSection.sectionName')}
         </h1>
-        <p className="text-base sm:text-lg md:text-xl">
+        <p className="text-base sm:text-lg 2xl:text-xl">
           {i18n.t('contactSection.intro')}
         </p>
         <form
@@ -43,7 +43,7 @@ const Contact = () => {
           onSubmit={sendEmail}
         >
           <input
-            className="p-2 md:p-2.5 rounded-sm bg-theme-white text-theme-black text-lg outline-none"
+            className="p-2 2xl:p-2.5 rounded-sm bg-theme-white text-theme-black text-lg outline-none"
             type="text"
             placeholder={`${i18n.t(
               'contactSection.placeholders.placeholderName'
@@ -52,24 +52,24 @@ const Contact = () => {
             required
           />
           <input
-            className="p-2 md:p-2.5 my-3 md:my-4 rounded-sm bg-theme-white text-theme-black text-lg outline-none"
+            className="p-2 2xl:p-2.5 my-3 md:my-4 rounded-sm bg-theme-white text-theme-black text-lg outline-none"
             type="email"
             placeholder="Email"
             name="user_email"
             required
           ></input>
           <textarea
-            className="rounded-sm bg-theme-white p-2 md:p-4 text-theme-black text-lg outline-none"
+            className="rounded-sm bg-theme-white p-2 2xl:p-4 text-theme-black text-lg outline-none"
             name="message"
             placeholder={`${i18n.t(
               'contactSection.placeholders.placeholderMessage'
             )}`}
-            rows="7"
+            rows="6"
             required
           ></textarea>
           <button
             type="submit"
-            className="w-28 h-11 md:w-32 md:h-12 flex items-center justify-center cursor-pointer hover:text-white active:text-white duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 rounded text-lg md:text-xl mt-3 md:mt-5 mx-auto font-medium"
+            className="w-28 h-11 2xl:w-32 2xl:h-12 flex items-center justify-center cursor-pointer hover:text-white active:text-white duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 rounded text-lg 2xl:text-xl mt-3 md:mt-5 mx-auto font-medium"
           >
             {i18n.t('contactSection.button')}{' '}
             <RiSendPlaneFill className="ml-3" />

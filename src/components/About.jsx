@@ -14,18 +14,18 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-start justify-between mb-6">
           {/* Introduction */}
           <div className="md:mt-6 mx-auto md:mx-0">
-            <h1 className="flex items-center gap-2 text-2xl sm:text-3xl md:text-4xl font-bold after:content-[''] after:w-1.5 after:h-14 after:bg-theme-blue-100 after:animate-cursorBlink">
+            <h1 className="flex items-center gap-2 text-2xl sm:text-3xl 2xl:text-4xl font-bold after:content-[''] after:w-1.5 after:h-14 after:bg-theme-blue-100 after:animate-cursorBlink">
               {i18n.t('aboutSection.intro')}
             </h1>
             <h2 className="text-base sm:text-lg mb-3">
               {i18n.t('aboutSection.welcome')}
             </h2>
-            <div className="text-base sm:text-xl md:text-2xl flex items-center justify-start md:mt-5">
+            <div className="text-base sm:text-xl 2xl:text-2xl flex items-center justify-start md:mt-5">
               <p>{i18n.t('aboutSection.smallDescription')} </p>
-              <span className="text-4xl md:text-6xl text-theme-blue-50 ml-1 md:ml-2 md:mr-1">
+              <span className="text-3xl sm:text-4xl 2xl:text-5xl text-theme-blue-50 ml-1 md:ml-2 md:mr-1">
                 [
               </span>
-              <div className="text-lg sm:text-xl md:text-3xl font-medium">
+              <div className="text-sm sm:text-lg md:text-xl 2xl:text-2xl font-medium">
                 <TypeAnimation
                   cursor={false}
                   sequence={[
@@ -41,13 +41,15 @@ const About = () => {
                     3000,
                     `${i18n.t('aboutSection.animatedTexts.textSix')}`,
                     3000,
+                    `${i18n.t('aboutSection.animatedTexts.textSeven')}`,
+                    3000,
                   ]}
                   wrapper="span"
                   speed="45"
                   repeat={Infinity}
                 />
               </div>
-              <span className="text-4xl md:text-6xl text-theme-blue-50 sm:ml-1">
+              <span className="text-3xl sm:text-4xl 2xl:text-5xl text-theme-blue-50 sm:ml-1">
                 ]
               </span>
             </div>
@@ -63,18 +65,18 @@ const About = () => {
         </div>
         <div className="md:hidden mx-auto md:mx-0">
           <h1 className="text-2xl md:text-3xl border-b-[4px] inline-block border-theme-white mb-4 pb-1">
-            About Me
+            {i18n.t('aboutSection.aboutMe')}
           </h1>
         </div>
         {/* Description */}
-        <p className="text-base sm:text-lg md:text-xl">
+        <p className="text-base sm:text-lg 2xl:text-xl">
           {i18n.t('aboutSection.description')}
         </p>
 
         {/* Buttons */}
         <div className="md:mx-0 w-full flex justify-center md:justify-start items-center mt-6 text-theme-white text-sm sm:text-base">
           <Link to="works" smooth={true} duration={600}>
-            <button className="w-28 sm:w-32 h-12 flex justify-center items-center rounded bg-transparent mr-4 md:mr-7 border-2 hover:text-white active:text-white hover:bg-theme-blue-50 active:bg-theme-blue-50 hover:border-theme-blue-50 active:border-theme-blue-50 duration-200 group font-medium">
+            <button className="w-28 2xl:w-32 h-12 flex justify-center items-center rounded bg-transparent mr-4 md:mr-7 border-2 hover:text-white active:text-white hover:bg-theme-blue-50 active:bg-theme-blue-50 hover:border-theme-blue-50 active:border-theme-blue-50 duration-200 group font-medium">
               {i18n.t('aboutSection.buttons.work')}
               <span className="group-hover:rotate-90 group-active:rotate-90 duration-300">
                 <HiArrowNarrowRight className="ml-1" />
@@ -82,7 +84,7 @@ const About = () => {
             </button>
           </Link>
           <Link to="contact" smooth={true} duration={600}>
-            <button className="w-24 md:w-28 h-12 flex justify-center items-center rounded bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white duration-200 font-medium">
+            <button className="w-24 2xl:w-28 h-12 flex justify-center items-center rounded bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 hover:text-white active:text-white duration-200 font-medium">
               {i18n.t('aboutSection.buttons.hire')}
             </button>
           </Link>

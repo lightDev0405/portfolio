@@ -20,12 +20,14 @@ const content = {
           textOne: 'full-stack developer',
           textTwo: 'web developer',
           textThree: 'freelancer developer',
-          textFour: 'full-stack MERN',
+          textFour: 'CSS wizard',
           textFive: 'React developer',
-          textSix: 'JavasScript developer',
+          textSix: 'JavasScript ninja',
+          textSeven: 'front-end engineer',
         },
+        aboutMe: 'About me',
         description:
-          "I'm a self-taught front-end developer with an array of amazing projects. I dedicate myself to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
+          "I'm a self-taught and motivated web developer, I'm constantly learning new technologies. My main focus is to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
         buttons: {
           work: 'View Work',
           hire: 'Contact',
@@ -34,14 +36,14 @@ const content = {
       skillsSection: {
         sectionName: 'Skills',
         intro:
-          "Some of the main technologies I'm currently using in my toolset.",
+          "I started studying by building a solid foundation in the world of web development, HTML, CSS, Javascript and accessibility. I learned front-end and back-end frameworks. I deepened my knowledge into industry tools like Git and best practice for commits, testing tools like Jest and Mocha, linting, package management, and build tools like Webpack and Babel, among many other tools. I made a small compilation of the main technologies that I am currently using in my toolset. I'm always open to learning new technologies to expand my knowledge.",
         showMore: 'Show More',
         showLess: 'Show Less',
       },
       worksSection: {
         sectionName: 'Works',
         intro:
-          "I created and launched complete projects. carrying the development of its' front-end codebases and collaborating with designers. Here are some examples of my work.",
+          'I created and participated in the development of complete projects. carrying out the development of their codebases from front-end to back-end, testing, optimizing, fixing bugs and collaborating with designers. Here are some examples of my work.',
         workElement: {
           tools: 'Tools',
           buttons: {
@@ -79,7 +81,7 @@ const content = {
       contactSection: {
         sectionName: 'Contact',
         intro:
-          'To contact me, fill out the form below, or if you prefer, contact me via LinkedIn or send an email. I am available for hire and open to any ideas of cooperation.',
+          'To contact me, fill out the form below, or if you prefer, contact me via LinkedIn or send an email. I am available for hire and open to any ideas of cooperation, also as a freelancer.',
         placeholders: {
           placeholderName: 'Name',
           placeholderMessage: 'Message',
@@ -92,6 +94,7 @@ const content = {
           error: 'Error! Please try again later.',
         },
       },
+      footer: 'source',
     },
   },
 };

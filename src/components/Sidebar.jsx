@@ -1,13 +1,28 @@
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
+import { FcDocument } from 'react-icons/fc';
 import { i18n } from '../locale/i18n';
+import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
+import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
+import toast from 'react-hot-toast';
+
+const CURRENT_KEY = localStorage.getItem('i18nextLng');
 
 const Sidebar = () => {
   const social = {
     linkedin: 'https://www.linkedin.com/in/tiagocreator/',
     github: 'https://github.com/tiagocreator',
     email: 'mailto:tiagoleite1405@gmail.com',
+  };
+
+  const resumeLink = CURRENT_KEY === 'pt-BR' ? ptResume : enResume;
+
+  const downloadResume = () => {
+    toast(i18n.t('header.resume.downloadMessage'), {
+      icon: <FcDocument size={28} />,
+      duration: 6000,
+    });
   };
 
   return (
@@ -43,12 +58,13 @@ const Sidebar = () => {
       <li className="flex justify-between items-between w-40 h-14 ml-[-100px] hover:ml-0 duration-300 bg-[#4E535E]">
         <a
           className="flex justify-around items-center w-full"
-          href="/"
-          target="_blank"
+          href={resumeLink}
+          download={i18n.t('header.resume.downloadName')}
           rel="noreferrer"
+          target="_blank"
+          onClick={downloadResume}
         >
-          {i18n.t('header.socialMedia.resume')}{' '}
-          <BsFillPersonLinesFill size={30} />
+          {i18n.t('header.resume.name')} <BsFillPersonLinesFill size={30} />
         </a>
       </li>
     </ul>

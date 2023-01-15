@@ -8,8 +8,10 @@ const content = {
           works: 'Works',
           contact: 'Contact',
         },
-        socialMedia: {
-          resume: 'Resume',
+        resume: {
+          name: 'Resume',
+          downloadName: 'tiago-leite-resume',
+          downloadMessage: 'Downloading resume',
         },
       },
       aboutSection: {

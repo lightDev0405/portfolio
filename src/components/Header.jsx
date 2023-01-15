@@ -9,6 +9,7 @@ import {
 } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { HiOutlineMail } from 'react-icons/hi';
+import { FcDocument } from 'react-icons/fc';
 import { Link } from 'react-scroll';
 import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
@@ -16,6 +17,9 @@ import { BsChevronDown } from 'react-icons/bs';
 import { i18n } from '../locale/i18n';
 import '../../node_modules/flag-icons/css/flag-icons.min.css';
 import Sidebar from './Sidebar';
+import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
+import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
+import toast from 'react-hot-toast';
 
 const I18N_STORAGE_KEY = 'i18nextLng';
 const CURRENT_KEY = localStorage.getItem('i18nextLng');
@@ -39,6 +43,15 @@ const Navbar = () => {
     linkedin: 'https://www.linkedin.com/in/tiagocreator/',
     github: 'https://github.com/tiagocreator',
     email: 'mailto:tiagoleite1405@gmail.com',
+  };
+
+  const resumeLink = CURRENT_KEY === 'pt-BR' ? ptResume : enResume;
+
+  const downloadResume = () => {
+    toast(i18n.t('header.resume.downloadMessage'), {
+      icon: <FcDocument size={28} />,
+      duration: 6000,
+    });
   };
 
   return (
@@ -135,7 +148,13 @@ const Navbar = () => {
             </a>
           </li>
           <li className="p-2.5 bg-[#4E535E] rounded">
-            <a href="/">
+            <a
+              href={resumeLink}
+              download={i18n.t('header.resume.downloadName')}
+              rel="noreferrer"
+              target="_blank"
+              onClick={downloadResume}
+            >
               <BsFillPersonLinesFill size={40} />
             </a>
           </li>

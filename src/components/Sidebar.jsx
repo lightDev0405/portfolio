@@ -13,7 +13,7 @@ const Sidebar = () => {
   const social = {
     linkedin: 'https://www.linkedin.com/in/tiagocreator/',
     github: 'https://github.com/tiagocreator',
-    email: 'mailto:tiagoleite1405@gmail.com',
+    email: 'mailto:contato@tiagocreator.com',
   };
 
   const resumeLink = CURRENT_KEY === 'pt-BR' ? ptResume : enResume;

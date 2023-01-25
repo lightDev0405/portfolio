@@ -37,5 +37,7 @@ slick-carousel | Componente de slider responsivo simples, que usei na sessão de
 
 ![works-desktop](https://user-images.githubusercontent.com/82607849/214569719-9abec0be-1e8d-4277-92f0-f662e8986436.png)
 
+---
+
 ### Licença
 Distribuido sobre a Licença Apache Versão 2.0 (Apache 2.0), para saber mais leia LICENSE.txt.

@@ -18,6 +18,7 @@ react-hot-toast | Pacote de notificações simples para React, que usei no formu
 TailwindCSS | Framework CSS que ultilizei para estilização do site, é uma framework de baixo nível e altamente customizável.
 react-type-animation | Componente de animação de texto, que imita a digitação de textos e frases contidos em uma array, ultilizei na sessão de intrudução.
 slick-carousel | Componente de slider responsivo simples, que usei na sessão de projetos na versão mobile.
+EmailJs | Uma biblioteca que ajuda a enviar e-mails usando apenas tecnologias front-end, retirando a necessidade de um server.
 
 ---
 

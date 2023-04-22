@@ -41,7 +41,7 @@ const Works = () => {
               <div>
                 <WorkElement
                   img={HypeCamperMobileImg}
-                  alt='hype camper camping locations website'
+                  alt={i18n.t('worksSection.hypeCamper.alt')}
                   name={`${i18n.t('worksSection.hypeCamper.name')}`}
                   description={`${i18n.t('worksSection.hypeCamper.description')}`}
                   tools='Node, Express, MongoDB'
@@ -52,7 +52,7 @@ const Works = () => {
               <div>
                 <WorkElement
                   img={JsClassicGamesMobileImg}
-                  alt='javascript classic games website'
+                  alt={i18n.t('worksSection.classicGames.alt')}
                   name={`${i18n.t('worksSection.classicGames.name')}`}
                   description={`${i18n.t('worksSection.classicGames.description')}`}
                   tools='HTML, CSS, JavaScript'
@@ -63,8 +63,8 @@ const Works = () => {
               <div>
                 <WorkElement
                   img={LassoMobileImg}
-                  alt=''
-                  name='Lasso'
+                  alt={i18n.t('worksSection.lasso.alt')}
+                  name={`${i18n.t('worksSection.lasso.name')}`}
                   description={`${i18n.t('worksSection.lasso.description')}`}
                   tools='React, Redux, Sass'
                   link='https://lasso.herokuapp.com/'
@@ -74,7 +74,7 @@ const Works = () => {
               <div>
                 <WorkElement
                   img={TodoSorrisoMobileImg}
-                  alt='todo sorriso dental clinic website'
+                  alt={i18n.t('worksSection.todoSorriso.alt')}
                   name={`${i18n.t('worksSection.todoSorriso.name')}`}
                   description={`${i18n.t('worksSection.todoSorriso.description')}`}
                   tools='HTML, CSS, JavaScript'
@@ -85,7 +85,7 @@ const Works = () => {
               <div>
                 <WorkElement
                   img={CineflixMobileImg}
-                  alt='cineflix'
+                  alt={i18n.t('worksSection.cineflix.alt')}
                   name={`${i18n.t('worksSection.cineflix.name')}`}
                   description={`${i18n.t('worksSection.cineflix.description')}`}
                   tools='React, TailwindCSS, Firebase'
@@ -99,7 +99,7 @@ const Works = () => {
           <div className='hidden md:flex flex-col'>
             <WorkElement
               img={HypeCamperDesktopImg}
-              alt='hype camper camping locations website'
+              alt={i18n.t('worksSection.hypeCamper.alt')}
               name={`${i18n.t('worksSection.hypeCamper.name')}`}
               description={`${i18n.t('worksSection.hypeCamper.description')}`}
               tools='Node, Express, MongoDB'
@@ -109,7 +109,7 @@ const Works = () => {
 
             <WorkElement
               img={JsClassicGamesDesktopImg}
-              alt='javascript classic games website'
+              alt={i18n.t('worksSection.classicGames.alt')}
               name={`${i18n.t('worksSection.classicGames.name')}`}
               description={`${i18n.t('worksSection.classicGames.description')}`}
               tools='HTML, CSS, JavaScript'
@@ -119,7 +119,7 @@ const Works = () => {
             />
             <WorkElement
               img={LassoDesktopImg}
-              alt=''
+              alt={i18n.t('worksSection.lasso.alt')}
               name={`${i18n.t('worksSection.lasso.name')}`}
               description={`${i18n.t('worksSection.lasso.description')}`}
               tools='React, Redux, Sass'
@@ -128,7 +128,7 @@ const Works = () => {
             />
             <WorkElement
               img={TodoSorrisoDesktopImg}
-              alt='todo sorriso dental clinic website'
+              alt={i18n.t('worksSection.todoSorriso.alt')}
               name={`${i18n.t('worksSection.todoSorriso.name')}`}
               description={`${i18n.t('worksSection.todoSorriso.description')}`}
               tools='HTML, CSS, JavaScript'
@@ -138,7 +138,7 @@ const Works = () => {
             />
             <WorkElement
               img={CineflixDesktopImg}
-              alt='cineflix movie database website'
+              alt={i18n.t('worksSection.cineflix.alt')}
               name={`${i18n.t('worksSection.cineflix.name')}`}
               description={`${i18n.t('worksSection.cineflix.description')}`}
               tools='React, TailwindCSS, Firebase'

@@ -58,26 +58,31 @@ const content = {
           name: 'Cineflix',
           description:
             'Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites.',
+          alt: 'cineflix website of movie and series information',
         },
         classicGames: {
           name: 'Classic Games',
           description:
             'Website of my favorite classic games that I recreated in a more simplified way using HTML, CSS and JavaScript. My goal with this is to learn the logic and the syntax of JavaScript.',
+          alt: 'classic games repository website',
         },
         todoSorriso: {
           name: 'Todo Sorriso',
           description:
             'Todo Sorriso is a responsive dental clinic website, made in HTML, CSS and JavaScript, without the use of frameworks.',
+          alt: 'todo sorriso specialized dental clinic website',
         },
         lasso: {
           name: 'Lasso',
           description:
             'A complete full stack e-commerce where users can create an account and login, add products to cart, shop, filter products by category, name, brand, see the order list and much more.',
+          alt: 'lasso online store',
         },
         hypeCamper: {
           name: 'Hype Camper',
           description:
             'Hype Camper is a full stack CRUD website made with Node, Express and MongoDB where users can create, review and manage campgrounds.',
+          alt: 'hype camper camping locations website',
         },
       },
       contactSection: {

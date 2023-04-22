@@ -5,8 +5,8 @@ import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg
 import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
 import TodoSorrisoMobileImg from '../assets/images/works/todosorriso.jpg';
 import TodoSorrisoDesktopImg from '../assets/images/works/todosorriso-desktop.jpg';
-import TaskoMobileImg from '../assets/images/works/tasko.jpg';
-import TaskoDesktopImg from '../assets/images/works/tasko-desktop.jpg';
+import LassoMobileImg from '../assets/images/works/lasso.jpg';
+import LassoDesktopImg from '../assets/images/works/lasso-desktop.jpg';
 import HypeCamperDesktopImg from '../assets/images/works/hype-camper-desktop.jpg';
 import HypeCamperMobileImg from '../assets/images/works/hype-camper.jpg';
 
@@ -26,134 +26,124 @@ const Works = () => {
   };
 
   return (
-    <section
-      name="works"
-      className="pb-[70px] md:pb-[80px] w-full text-theme-white"
-    >
-      <div className="flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8">
-        <div className="pb-10">
-          <h1 className="text-2xl 2xl:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1">
+    <section name='works' className='pb-[70px] md:pb-[80px] w-full text-theme-white'>
+      <div className='flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8'>
+        <div className='pb-10'>
+          <h1 className='text-2xl 2xl:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
             {i18n.t('worksSection.sectionName')}
           </h1>
-          <h2 className="text-base sm:text-lg 2xl:text-xl">
-            {i18n.t('worksSection.intro')}
-          </h2>
+          <h2 className='text-base sm:text-lg 2xl:text-xl'>{i18n.t('worksSection.intro')}</h2>
         </div>
 
         <>
-          <div className="mx-auto w-full max-w-[400px] md:hidden">
+          <div className='mx-auto w-full max-w-[400px] md:hidden'>
             <Slider {...settings}>
               <div>
                 <WorkElement
                   img={HypeCamperMobileImg}
-                  alt="hype camper camping locations website"
+                  alt='hype camper camping locations website'
                   name={`${i18n.t('worksSection.hypeCamper.name')}`}
-                  description={`${i18n.t(
-                    'worksSection.hypeCamper.description'
-                  )}`}
-                  tools="Node, Express, MongoDB"
-                  link="https://hype-camper.herokuapp.com/"
-                  code="https://github.com/tiagocreator/hype-camper"
+                  description={`${i18n.t('worksSection.hypeCamper.description')}`}
+                  tools='Node, Express, MongoDB'
+                  link='https://hype-camper.herokuapp.com/'
+                  code='https://github.com/tiagocreator/hype-camper'
                 />
               </div>
               <div>
                 <WorkElement
                   img={JsClassicGamesMobileImg}
-                  alt="javascript classic games website"
+                  alt='javascript classic games website'
                   name={`${i18n.t('worksSection.classicGames.name')}`}
-                  description={`${i18n.t(
-                    'worksSection.classicGames.description'
-                  )}`}
-                  tools="HTML, CSS, JavaScript"
-                  link="https://js-classic-games.vercel.app/"
-                  code="https://github.com/tiagocreator/js-classic-games"
+                  description={`${i18n.t('worksSection.classicGames.description')}`}
+                  tools='HTML, CSS, JavaScript'
+                  link='https://js-classic-games.vercel.app/'
+                  code='https://github.com/tiagocreator/js-classic-games'
+                />
+              </div>
+              <div>
+                <WorkElement
+                  img={LassoMobileImg}
+                  alt=''
+                  name='Lasso'
+                  description={`${i18n.t('worksSection.lasso.description')}`}
+                  tools='React, Redux, Sass'
+                  link='https://lasso.herokuapp.com/'
+                  code='https://github.com/tiagocreator/lasso-ecommerce'
                 />
               </div>
               <div>
                 <WorkElement
                   img={TodoSorrisoMobileImg}
-                  alt="todo sorriso dental clinic website"
+                  alt='todo sorriso dental clinic website'
                   name={`${i18n.t('worksSection.todoSorriso.name')}`}
-                  description={`${i18n.t(
-                    'worksSection.todoSorriso.description'
-                  )}`}
-                  tools="HTML, CSS, JavaScript"
-                  link="https://todosorriso.vercel.app/"
-                  code="https://github.com/tiagocreator/todosorriso"
+                  description={`${i18n.t('worksSection.todoSorriso.description')}`}
+                  tools='HTML, CSS, JavaScript'
+                  link='https://todosorriso.vercel.app/'
+                  code='https://github.com/tiagocreator/todosorriso'
                 />
               </div>
               <div>
                 <WorkElement
                   img={CineflixMobileImg}
-                  alt="cineflix"
+                  alt='cineflix'
                   name={`${i18n.t('worksSection.cineflix.name')}`}
                   description={`${i18n.t('worksSection.cineflix.description')}`}
-                  tools="React, TailwindCSS, Firebase"
-                  link="https://cineflix-ten.vercel.app/"
-                  code="https://github.com/tiagocreator/cineflix"
-                />
-              </div>
-              <div>
-                <WorkElement
-                  img={TaskoMobileImg}
-                  alt="tasko a todo task and pomodoro web app"
-                  name="Tasko"
-                  description={`${i18n.t('worksSection.tasko.description')}`}
-                  tools="React, JavaScript, styled-components"
-                  link="https://tasko-nine.vercel.app/"
-                  code="https://github.com/tiagocreator/tasko"
+                  tools='React, TailwindCSS, Firebase'
+                  link='https://cineflix-ten.vercel.app/'
+                  code='https://github.com/tiagocreator/cineflix'
                 />
               </div>
             </Slider>
           </div>
 
-          <div className="hidden md:flex flex-col">
+          <div className='hidden md:flex flex-col'>
             <WorkElement
               img={HypeCamperDesktopImg}
-              alt="hype camper camping locations website"
+              alt='hype camper camping locations website'
               name={`${i18n.t('worksSection.hypeCamper.name')}`}
               description={`${i18n.t('worksSection.hypeCamper.description')}`}
-              tools="Node, Express, MongoDB"
-              link="https://hype-camper.herokuapp.com/"
-              code="https://github.com/tiagocreator/hype-camper"
+              tools='Node, Express, MongoDB'
+              link='https://hype-camper.herokuapp.com/'
+              code='https://github.com/tiagocreator/hype-camper'
             />
+
             <WorkElement
               img={JsClassicGamesDesktopImg}
-              alt="javascript classic games website"
+              alt='javascript classic games website'
               name={`${i18n.t('worksSection.classicGames.name')}`}
               description={`${i18n.t('worksSection.classicGames.description')}`}
-              tools="HTML, CSS, JavaScript"
-              link="https://js-classic-games.vercel.app/"
-              code="https://github.com/tiagocreator/js-classic-games"
+              tools='HTML, CSS, JavaScript'
+              link='https://js-classic-games.vercel.app/'
+              code='https://github.com/tiagocreator/js-classic-games'
               reverse
+            />
+            <WorkElement
+              img={LassoDesktopImg}
+              alt=''
+              name={`${i18n.t('worksSection.lasso.name')}`}
+              description={`${i18n.t('worksSection.lasso.description')}`}
+              tools='React, Redux, Sass'
+              link='https://lasso.herokuapp.com/'
+              code='https://github.com/tiagocreator/lasso-ecommerce'
             />
             <WorkElement
               img={TodoSorrisoDesktopImg}
-              alt="todo sorriso dental clinic website"
+              alt='todo sorriso dental clinic website'
               name={`${i18n.t('worksSection.todoSorriso.name')}`}
               description={`${i18n.t('worksSection.todoSorriso.description')}`}
-              tools="HTML, CSS, JavaScript"
-              link="https://todosorriso.vercel.app/"
-              code="https://github.com/tiagocreator/todosorriso"
-            />
-            <WorkElement
-              img={CineflixDesktopImg}
-              alt="cineflix movie database website"
-              name={`${i18n.t('worksSection.cineflix.name')}`}
-              description={`${i18n.t('worksSection.cineflix.description')}`}
-              tools="React, TailwindCSS, Firebase"
-              link="https://cineflix-ten.vercel.app/"
-              code="https://github.com/tiagocreator/cineflix"
+              tools='HTML, CSS, JavaScript'
+              link='https://todosorriso.vercel.app/'
+              code='https://github.com/tiagocreator/todosorriso'
               reverse
             />
             <WorkElement
-              img={TaskoDesktopImg}
-              alt="tasko a todo task and pomodoro web app"
-              name={`${i18n.t('worksSection.tasko.name')}`}
-              description={`${i18n.t('worksSection.tasko.description')}`}
-              tools="React, JavaScript, styled-components"
-              link="https://tasko-nine.vercel.app/"
-              code="https://github.com/tiagocreator/tasko"
+              img={CineflixDesktopImg}
+              alt='cineflix movie database website'
+              name={`${i18n.t('worksSection.cineflix.name')}`}
+              description={`${i18n.t('worksSection.cineflix.description')}`}
+              tools='React, TailwindCSS, Firebase'
+              link='https://cineflix-ten.vercel.app/'
+              code='https://github.com/tiagocreator/cineflix'
             />
           </div>
         </>

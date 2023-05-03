@@ -66,11 +66,11 @@ const content = {
             'Website of my favorite classic games that I recreated in a more simplified way using HTML, CSS and JavaScript. My goal with this is to learn the logic and the syntax of JavaScript.',
           alt: 'classic games repository website',
         },
-        todoSorriso: {
-          name: 'Todo Sorriso',
+        noir: {
+          name: 'Noir',
           description:
-            'Todo Sorriso is a responsive dental clinic website, made in HTML, CSS and JavaScript, without the use of frameworks.',
-          alt: 'todo sorriso specialized dental clinic website',
+            'Noir is a 100% responsive barbershop website, with dark-mode and 4 pages made in HTML, LESS and JavaScript, without the use of any frameworks.',
+          alt: 'noir barbershop website',
         },
         lasso: {
           name: 'Lasso',

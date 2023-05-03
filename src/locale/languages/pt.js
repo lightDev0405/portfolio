@@ -66,11 +66,11 @@ const content = {
             'Website dos meus jogos clássicos favoritos que eu recriei de forma mais simplificada usando HTML, CSS e JavaScript. Meu objetivo com isso é aprender a lógica e a sintaxe do JavaScript.',
           alt: 'site de repositório de jogos clássicos',
         },
-        todoSorriso: {
-          name: 'Todo Sorriso',
+        noir: {
+          name: 'Noir',
           description:
-            'Todo Sorriso é um site responsivo de clínica odontológica, feito em HTML, CSS e JavaScript, sem o uso de frameworks.',
-          alt: 'site da clínica odontológica especializada todo sorriso',
+            'Noir é um site 100% responsivo de barbearia, com dark-mode e 4 páginas feito em HTML, LESS e JavaScript, sem o uso de frameworks.',
+          alt: 'noir site de barbearia',
         },
         lasso: {
           name: 'Lasso',

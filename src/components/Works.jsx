@@ -3,8 +3,8 @@ import CineflixMobileImg from '../assets/images/works/cineflix.jpg';
 import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
 import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg';
 import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
-import TodoSorrisoMobileImg from '../assets/images/works/todosorriso.jpg';
-import TodoSorrisoDesktopImg from '../assets/images/works/todosorriso-desktop.jpg';
+import NoirMobileImg from '../assets/images/works/noir.jpg';
+import NoirDesktopImg from '../assets/images/works/noir-desktop.jpg';
 import LassoMobileImg from '../assets/images/works/lasso.jpg';
 import LassoDesktopImg from '../assets/images/works/lasso-desktop.jpg';
 import HypeCamperDesktopImg from '../assets/images/works/hype-camper-desktop.jpg';
@@ -73,13 +73,13 @@ const Works = () => {
               </div>
               <div>
                 <WorkElement
-                  img={TodoSorrisoMobileImg}
-                  alt={i18n.t('worksSection.todoSorriso.alt')}
-                  name={`${i18n.t('worksSection.todoSorriso.name')}`}
-                  description={`${i18n.t('worksSection.todoSorriso.description')}`}
-                  tools='HTML, CSS, JavaScript'
-                  link='https://todosorriso.vercel.app/'
-                  code='https://github.com/tiagocreator/todosorriso'
+                  img={NoirMobileImg}
+                  alt={i18n.t('worksSection.noir.alt')}
+                  name={`${i18n.t('worksSection.noir.name')}`}
+                  description={`${i18n.t('worksSection.noir.description')}`}
+                  tools='HTML, LESS, JavaScript'
+                  link='https://noir-barbearia.vercel.app/'
+                  code='https://github.com/tiagocreator/noir-barbearia'
                 />
               </div>
               <div>
@@ -127,13 +127,13 @@ const Works = () => {
               code='https://github.com/tiagocreator/lasso-ecommerce'
             />
             <WorkElement
-              img={TodoSorrisoDesktopImg}
-              alt={i18n.t('worksSection.todoSorriso.alt')}
-              name={`${i18n.t('worksSection.todoSorriso.name')}`}
-              description={`${i18n.t('worksSection.todoSorriso.description')}`}
-              tools='HTML, CSS, JavaScript'
-              link='https://todosorriso.vercel.app/'
-              code='https://github.com/tiagocreator/todosorriso'
+              img={NoirDesktopImg}
+              alt={i18n.t('worksSection.noir.alt')}
+              name={`${i18n.t('worksSection.noir.name')}`}
+              description={`${i18n.t('worksSection.noir.description')}`}
+              tools='HTML, LESS, JavaScript'
+              link='https://noir-barbearia.vercel.app/'
+              code='https://github.com/tiagocreator/noir-barbearia'
               reverse
             />
             <WorkElement

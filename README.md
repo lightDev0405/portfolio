@@ -1,7 +1,7 @@
 ## Meu Portfolio
 
 
-### [Live Peview](https://www.tiagocreator.com/)
+### :computer: [Link do Meu Portfolio](https://www.tiagocreator.com/)
 
 ---
 
@@ -40,5 +40,9 @@ EmailJs | Uma biblioteca que ajuda a enviar e-mails usando apenas tecnologias fr
 
 ---
 
-### Licença
+### :notebook: Licença
 Distribuido sobre a Licença Apache Versão 2.0 (Apache 2.0), para saber mais leia LICENSE.txt.
+
+---
+
+### :computer: [Link do Meu Portfolio](https://www.tiagocreator.com/)

@@ -45,7 +45,7 @@ const Works = () => {
                   name={`${i18n.t('worksSection.hypeCamper.name')}`}
                   description={`${i18n.t('worksSection.hypeCamper.description')}`}
                   tools='Node, Express, MongoDB'
-                  link='https://hype-camper.herokuapp.com/'
+                  link='https://hype-camper.cyclic.app/'
                   code='https://github.com/tiagocreator/hype-camper'
                 />
               </div>
@@ -103,7 +103,7 @@ const Works = () => {
               name={`${i18n.t('worksSection.hypeCamper.name')}`}
               description={`${i18n.t('worksSection.hypeCamper.description')}`}
               tools='Node, Express, MongoDB'
-              link='https://hype-camper.herokuapp.com/'
+              link='https://hype-camper.cyclic.app/'
               code='https://github.com/tiagocreator/hype-camper'
             />
 

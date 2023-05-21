@@ -67,7 +67,7 @@ const Works = () => {
                   name={`${i18n.t('worksSection.lasso.name')}`}
                   description={`${i18n.t('worksSection.lasso.description')}`}
                   tools='React, Redux, Sass'
-                  link='https://lasso.herokuapp.com/'
+                  link='https://lasso-ecommerce.up.railway.app/'
                   code='https://github.com/tiagocreator/lasso-ecommerce'
                 />
               </div>
@@ -123,7 +123,7 @@ const Works = () => {
               name={`${i18n.t('worksSection.lasso.name')}`}
               description={`${i18n.t('worksSection.lasso.description')}`}
               tools='React, Redux, Sass'
-              link='https://lasso.herokuapp.com/'
+              link='https://lasso-ecommerce.up.railway.app/'
               code='https://github.com/tiagocreator/lasso-ecommerce'
             />
             <WorkElement

@@ -6,9 +6,10 @@ import {
   SiExpress,
   SiMongodb,
   SiRedux,
+  SiTypescript,
 } from 'react-icons/si';
 import { DiGit } from 'react-icons/di';
-import { BsBootstrapFill, BsPlusLg, BsServer } from 'react-icons/bs';
+import { BsPlusLg, BsServer } from 'react-icons/bs';
 import { FaNodeJs, FaSass } from 'react-icons/fa';
 import { HiMinus } from 'react-icons/hi';
 
@@ -51,6 +52,13 @@ const Skills = () => {
             className={`${
               active ? 'block' : 'hidden'
             } sm:block shadow-md shadow-[rgba(19,33,50,0.8)] p-5 hover:scale-[1.2] duration-500 select-none`}>
+            <SiTypescript className='text-[#146BBC] mx-auto mb-4 text-4xl xl:text-5xl 2xl:text-6xl' />
+            <span className='mt-4 text-sm 2xl:text-base'>TypeScript</span>
+          </div>
+          <div
+            className={`${
+              active ? 'block' : 'hidden'
+            } sm:block shadow-md shadow-[rgba(19,33,50,0.8)] p-5 hover:scale-[1.2] duration-500 select-none`}>
             <SiRedux className='text-[#764ABC] mx-auto mb-4 text-4xl xl:text-5xl 2xl:text-6xl' />
             <span className='mt-4 text-sm 2xl:text-base'>Redux</span>
           </div>
@@ -81,13 +89,6 @@ const Skills = () => {
             } sm:block shadow-md shadow-[rgba(19,33,50,0.8)] p-5 hover:scale-[1.2] duration-500 select-none`}>
             <FaSass className='scale-[1.4] text-[#C66394] mx-auto mb-4 text-4xl xl:text-5xl 2xl:text-6xl' />
             <span className='mt-4 text-sm 2xl:text-base'>Sass</span>
-          </div>
-          <div
-            className={`${
-              active ? 'block' : 'hidden'
-            } sm:block shadow-md shadow-[rgba(19,33,50,0.8)] p-5 hover:scale-[1.2] duration-500 select-none`}>
-            <BsBootstrapFill className='text-[#69419C] mx-auto mb-4 text-4xl xl:text-5xl 2xl:text-6xl' />
-            <span className='mt-4 text-sm 2xl:text-base'>Bootstrap</span>
           </div>
           <div
             className={`${

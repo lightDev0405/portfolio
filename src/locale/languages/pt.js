@@ -16,20 +16,19 @@ const content = {
       },
       aboutSection: {
         intro: 'Olá, eu sou Tiago Leite.',
-        smallDescription: 'Eu sou um',
         welcome: 'Bem vindo{a} ao meu portfolio',
+        smallDescription: 'Eu sou um',
         animatedTexts: {
-          textOne: 'programador full-stack',
+          textOne: 'programador front-end',
           textTwo: 'desenvolvedor web',
-          textThree: 'programador freelancer',
-          textFour: 'mago do CSS',
-          textFive: 'desenvolvedor React',
-          textSix: 'ninja do JavaScript',
-          textSeven: 'engenheiro front-end',
+          textThree: 'mago do CSS',
+          textFour: 'desenvolvedor React',
+          textFive: 'ninja do JavaScript',
+          textSix: 'engenheiro UI',
         },
         aboutMe: 'Sobre mim',
         description:
-          'Sou um desenvolvedor web autodidata e motivado, estou constantemente aprendendo novas tecnologias. Meu principal foco é desenvolver sites e aplicativos web que sejam rápidos, funcionais e atraentes em seu visual. Sempre me baseando nos princípios de usabilidade e navegabilidade.',
+          'Sou um desenvolvedor front-end autodidata e motivado, estou constantemente aprendendo novas tecnologias. Meu principal foco é desenvolver sites e aplicativos web que sejam rápidos, funcionais e atraentes em seu visual. Sempre me baseando nos princípios de usabilidade e navegabilidade.',
         buttons: {
           work: 'Projetos',
           hire: 'Contato',
@@ -38,14 +37,14 @@ const content = {
       skillsSection: {
         sectionName: 'Skills',
         intro:
-          'Comecei a estudar construindo uma base sólida nos princípios do desenvolvimento web, HTML, CSS, Javascript e acessibilidade. Aprendi frameworks front-end e back-end. Me apronfundei em ferramentas de indústria como o Git e boas práticas de commits, ferramentas de teste como Jest e Mocha, linting, gerenciamento de pacotes, e ferramentas de construção como Webpack e Babel, dentre muitas outras. Fiz um pequeno compilado das principais tecnologias que estou usando atualmente em meu conjunto de ferramentas. Eu estou sempre aberto a aprender novas tecnologias para expandir meu conhecimento.',
+          'Comecei a estudar construindo uma base sólida nos princípios do desenvolvimento web, HTML, CSS, Javascript e acessibilidade. Aprendi frameworks front-end, APIs RESTful e também tecnologias back-end e banco de dados. Me apronfundei em ferramentas de indústria como o Git e boas práticas de commits, ferramentas de teste como Jest e Mocha, linting, gerenciamento de pacotes, e ferramentas de construção como Webpack e Babel, dentre muitas outras. Fiz um pequeno compilado das principais tecnologias que estou usando atualmente em meu conjunto de ferramentas. Eu estou sempre aberto a aprender novas tecnologias para expandir meu conhecimento.',
         showMore: 'Mostrar Mais',
         showLess: 'Esconder',
       },
       worksSection: {
         sectionName: 'Projetos',
         intro:
-          'Criei e participei do desenvolvimento de projetos completos. realizando o desenvolvimento de suas bases de código desde o front-end até o back-end, testando, otimizando, corrigindo bugs e colaborando com designers. Aqui estão alguns exemplos do meu trabalho.',
+          'Criei e participei do desenvolvimento de projetos completos. Testando, otimizando, corrigindo bugs e colaborando com designers. Aqui estão alguns exemplos do meu trabalho.',
         workElement: {
           tools: 'Ferramentas',
           buttons: {
@@ -75,13 +74,13 @@ const content = {
         lasso: {
           name: 'Lasso',
           description:
-            'Loja full stack completa onde os usuários podem criar conta e fazer login, adicionar produtos ao carrinho, fazer compras, filtrar produtos por categoria, nome, marca, ver a lista de pedidos e etc.',
+            'Loja completa onde os usuários podem criar conta e fazer login, adicionar produtos ao carrinho, fazer compras, filtrar produtos por categoria, nome, marca, ver a lista de pedidos e etc.',
           alt: 'loja online lasso',
         },
         hypeCamper: {
           name: 'Hype Camper',
           description:
-            'Hype Camper é um site full stack de acampamentos feito em Node, Express e MongoDB onde o usuário pode criar uma conta, postar novos acampamentos, gerenciar e fazer reviews.',
+            'Hype Camper é um site full stack de acampamentos onde foi integrado Node, Express e MongoDB ao front-end. O usuário pode criar uma conta, postar novos acampamentos, gerenciar e fazer reviews.',
           alt: 'hype camper site de lugares para acampar',
         },
       },

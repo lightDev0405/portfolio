@@ -16,20 +16,19 @@ const content = {
       },
       aboutSection: {
         intro: "Hello, I'm Tiago Leite.",
-        smallDescription: "I'm a",
         welcome: 'Welcome to my portfolio',
+        smallDescription: "I'm a",
         animatedTexts: {
-          textOne: 'full-stack developer',
+          textOne: 'front-end developer',
           textTwo: 'web developer',
-          textThree: 'freelancer developer',
-          textFour: 'CSS wizard',
-          textFive: 'React developer',
-          textSix: 'JavasScript ninja',
-          textSeven: 'front-end engineer',
+          textThree: 'CSS wizard',
+          textFour: 'React developer',
+          textFive: 'JavaScript ninja',
+          textSix: 'UI engineer',
         },
         aboutMe: 'About me',
         description:
-          "I'm a self-taught and motivated web developer, I'm constantly learning new technologies. My main focus is to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
+          "I'm a self-taught and motivated front-end developer, I'm constantly learning new technologies. My main focus is to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
         buttons: {
           work: 'View Work',
           hire: 'Contact',
@@ -38,14 +37,14 @@ const content = {
       skillsSection: {
         sectionName: 'Skills',
         intro:
-          "I started studying by building a solid foundation in the world of web development, HTML, CSS, Javascript and accessibility. I learned front-end and back-end frameworks. I deepened my knowledge into industry tools like Git and best practice for commits, testing tools like Jest and Mocha, linting, package management, and build tools like Webpack and Babel, among many other tools. I made a small compilation of the main technologies that I am currently using in my toolset. I'm always open to learning new technologies to expand my knowledge.",
+          "I started studying by building a solid foundation in the world of web development, HTML, CSS, Javascript and accessibility. I learned front-end frameworks, RESTful APIs and also back-end and database technologies. I deepened my knowledge into industry tools like Git and best practice for commits, testing tools like Jest and Mocha, linting, package management, and build tools like Webpack and Babel, among many other tools. I made a small compilation of the main technologies that I am currently using in my toolset. I'm always open to learning new technologies to expand my knowledge.",
         showMore: 'Show More',
         showLess: 'Show Less',
       },
       worksSection: {
         sectionName: 'Works',
         intro:
-          'I created and participated in the development of complete projects. carrying out the development of their codebases from front-end to back-end, testing, optimizing, fixing bugs and collaborating with designers. Here are some examples of my work.',
+          'I created and participated in the development of complete projects. Testing, optimizing, fixing bugs and collaborating with designers. Here are some examples of my work.',
         workElement: {
           tools: 'Tools',
           buttons: {
@@ -75,13 +74,13 @@ const content = {
         lasso: {
           name: 'Lasso',
           description:
-            'A complete full stack e-commerce where users can create an account and login, add products to cart, shop, filter products by category, name, brand, see the order list and much more.',
+            'A complete e-commerce where users can create an account and login, add products to cart, shop, filter products by category, name, brand, see the order list and much more.',
           alt: 'lasso online store',
         },
         hypeCamper: {
           name: 'Hype Camper',
           description:
-            'Hype Camper is a full stack CRUD website made with Node, Express and MongoDB where users can create, review and manage campgrounds.',
+            'Hype Camper is a full stack CRUD website where Node, Express and MongoDB have been integrated into the front-end. Users can create, review and manage campgrounds.',
           alt: 'hype camper camping locations website',
         },
       },

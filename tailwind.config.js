@@ -34,6 +34,17 @@ module.exports = {
             opacity: 0,
           },
         },
+        morph: {
+          '0%': {
+            'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%',
+          },
+          '50%': {
+            'border-radius': '30% 60% 70% 40%/50% 60% 30% 60%',
+          },
+          '100%': {
+            'border-radius': '60% 40% 30% 70%/60% 30% 70% 40%',
+          },
+        },
       },
       animation: {
         travelOrbit10: 'travelOrbit 10s infinite linear',
@@ -47,6 +58,7 @@ module.exports = {
         unrotate4: 'unrotate 4s infinite linear',
         unrotate2: 'unrotate 2s infinite linear',
         cursorBlink: 'cursorBlink 1.5s steps(2) infinite',
+        morph: 'morph 8s ease-in-out infinite',
       },
     },
   },

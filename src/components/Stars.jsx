@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 // Stars component logic
 window.onload = function () {
   setTimeout(start, 200);
@@ -247,6 +249,36 @@ function start() {
 }
 
 const Stars = () => {
+  // Function to reload the page to prevent buggy canvas when testing responsiveness
+  useEffect(() => {
+    // Store the initial screen width
+    let screenWidth = window.innerWidth;
+
+    // Function to reload the page
+    const reloadPage = () => {
+      window.location.reload();
+    };
+
+    // Function to handle screen width changes
+    const handleResize = () => {
+      const newScreenWidth = window.innerWidth;
+
+      // Check if the screen width has changed by 10 pixels or more
+      if (Math.abs(newScreenWidth - screenWidth) >= 10) {
+        // Reload the page
+        reloadPage();
+      }
+    };
+
+    // Add a resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Remove the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <canvas
       id='canvas'

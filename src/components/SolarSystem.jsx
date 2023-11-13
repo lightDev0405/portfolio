@@ -11,13 +11,13 @@ const ReactSolarSystem = () => {
 
   return (
     <div
-      className='relative mx-auto w-[330px] h-[330px] sm:my-[20px] md:my-[40px] lg:my-[60px] scale-[0.75] sm:scale-[0.85] md:scale-[1.0] lg:scale-[1.20] select-none perspective-9'
+      className='relative mx-auto w-[330px] h-[330px] scale-[0.75] sm:scale-[0.85] md:scale-[1.0] lg:scale-[1.10] lg:mt-6 select-none perspective-9'
       onClick={handleToggler}>
       {/* Solar Circle */}
       <div
         className={`${
           isActive ? 'rotate3d' : ''
-        } w-[330px] h-[330px] absolute inset-0 m-auto rounded-[50%] transition-all duration-[3s]`}>
+        } w-[330px] h-[330px] block inset-0 m-auto rounded-[50%] transition-all duration-[3s]`}>
         {/* Solar Orbit */}
         <div className='w-full h-full border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]'>
           {/* Solar Planet */}

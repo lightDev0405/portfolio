@@ -14,30 +14,31 @@ const content = {
           downloadMessage: 'Baixando currículo',
         },
       },
-      aboutSection: {
-        intro: 'Olá, eu sou Tiago Leite.',
-        welcome: 'Bem vindo{a} ao meu portfolio',
-        smallDescription: 'Eu sou um',
+      homeSection: {
+        intro: 'Oi, eu sou Tiago Leite.',
+        welcome: 'Bem vindos ao meu portfolio',
+        smallDescription: 'Eu sou',
         animatedTexts: {
-          textOne: 'programador front-end',
+          textOne: 'front end',
           textTwo: 'desenvolvedor web',
           textThree: 'mago do CSS',
           textFour: 'desenvolvedor React',
           textFive: 'ninja do JavaScript',
           textSix: 'engenheiro UI',
         },
-        aboutMe: 'Sobre mim',
-        description:
-          'Sou um desenvolvedor front-end autodidata e motivado, estou constantemente aprendendo novas tecnologias. Meu principal foco é desenvolver sites e aplicativos web que sejam rápidos, funcionais e atraentes em seu visual. Sempre me baseando nos princípios de usabilidade e navegabilidade.',
+        description: 'Sou um desenvolvedor front-end brasileiro autodidata e motivado.',
         buttons: {
           work: 'Projetos',
           hire: 'Contato',
         },
       },
+      aboutSection: {
+        sectionName: 'Sobre Mim',
+        description:
+          'Sou um desenvolvedor apaixonado e habilidoso, tenho excelência em desenvolver sites responsivos e atraentes. Minha experiência reside na criação de interfaces dinâmicas e envolventes por meio da escrita de código limpo e otimizado e da utilização de ferramentas e técnicas de desenvolvimento modernas. Além de desenvolvedor, sou um solucionador de problemas de natural. Para mim os desafios não são obstáculos, mas sim oportunidades para inovar e encontrar soluções elegantes.',
+      },
       skillsSection: {
-        sectionName: 'Skills',
-        intro:
-          'Comecei a estudar construindo uma base sólida nos princípios do desenvolvimento web, HTML, CSS, Javascript e acessibilidade. Aprendi frameworks front-end, APIs RESTful e também tecnologias back-end e banco de dados. Me apronfundei em ferramentas de indústria como o Git e boas práticas de commits, ferramentas de teste como Jest e Mocha, linting, gerenciamento de pacotes, e ferramentas de construção como Webpack e Babel, dentre muitas outras. Fiz um pequeno compilado das principais tecnologias que estou usando atualmente em meu conjunto de ferramentas. Eu estou sempre aberto a aprender novas tecnologias para expandir meu conhecimento.',
+        sectionName: 'Tecnologias',
         showMore: 'Mostrar Mais',
         showLess: 'Esconder',
       },

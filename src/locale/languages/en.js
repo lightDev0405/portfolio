@@ -14,7 +14,7 @@ const content = {
           downloadMessage: 'Downloading resume',
         },
       },
-      aboutSection: {
+      homeSection: {
         intro: "Hello, I'm Tiago Leite.",
         welcome: 'Welcome to my portfolio',
         smallDescription: "I'm a",
@@ -26,18 +26,19 @@ const content = {
           textFive: 'JavaScript ninja',
           textSix: 'UI engineer',
         },
-        aboutMe: 'About me',
-        description:
-          "I'm a self-taught and motivated front-end developer, I'm constantly learning new technologies. My main focus is to develop websites and web aplications that are objective, functional and attractive in their look. Always based on the principles of usability and navigability.",
+        description: "I'm a self-taught and motivated front-end developer based in Brazil.",
         buttons: {
           work: 'View Work',
           hire: 'Contact',
         },
       },
+      aboutSection: {
+        sectionName: 'About Me',
+        description:
+          'As a passionate developer equipped with an impressive array of skills, I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. Beyond the lines of code, I am a problem solver at heart. Challenges are not roadblocks but opportunities to innovate and find elegant solutions.',
+      },
       skillsSection: {
-        sectionName: 'Skills',
-        intro:
-          "I started studying by building a solid foundation in the world of web development, HTML, CSS, Javascript and accessibility. I learned front-end frameworks, RESTful APIs and also back-end and database technologies. I deepened my knowledge into industry tools like Git and best practice for commits, testing tools like Jest and Mocha, linting, package management, and build tools like Webpack and Babel, among many other tools. I made a small compilation of the main technologies that I am currently using in my toolset. I'm always open to learning new technologies to expand my knowledge.",
+        sectionName: 'Tech Stack',
         showMore: 'Show More',
         showLess: 'Show Less',
       },

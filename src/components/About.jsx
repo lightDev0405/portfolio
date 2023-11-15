@@ -8,12 +8,10 @@ const About = () => {
         <div className='flex flex-col md:flex-row align-center justify-center md:justify-between'>
           <SolarSystem />
           <div className='md:ml-4 lg:ml-14'>
-            <h1 className='text-2xl 2xl:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
+            <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
               {i18n.t('aboutSection.sectionName')}
             </h1>
-            <h2 className='text-base sm:text-lg 2xl:text-xl'>
-              {i18n.t('aboutSection.description')}
-            </h2>
+            <p className='text-base 2xl:text-lg'>{i18n.t('aboutSection.description')}</p>
           </div>
         </div>
       </div>

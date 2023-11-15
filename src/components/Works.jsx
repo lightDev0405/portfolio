@@ -29,10 +29,10 @@ const Works = () => {
     <section name='works' className='pb-[70px] md:pb-[80px] w-full text-theme-white'>
       <div className='flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8'>
         <div className='pb-10'>
-          <h1 className='text-2xl 2xl:text-3xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
+          <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
             {i18n.t('worksSection.sectionName')}
           </h1>
-          <h2 className='text-base sm:text-lg 2xl:text-xl'>{i18n.t('worksSection.intro')}</h2>
+          <p className='text-base 2xl:text-lg'>{i18n.t('worksSection.intro')}</p>
         </div>
 
         <>

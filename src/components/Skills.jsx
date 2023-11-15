@@ -28,7 +28,7 @@ const Skills = () => {
     <section name='skills' className='w-full pt-4 md:pt-16'>
       <div className='max-w-[900px] mx-auto p-4 md:p-8'>
         <div>
-          <h1 className='text-2xl 2xl:text-3xl border-b-[4px] inline-block border-theme-white mb-4 pb-1'>
+          <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
             {i18n.t('skillsSection.sectionName')}
           </h1>
         </div>

@@ -282,7 +282,7 @@ const Stars = () => {
   return (
     <canvas
       id='canvas'
-      className='w-full h-full flex items-center justify-center absolute top-0 left-0'></canvas>
+      className='w-full h-screen flex items-center justify-center absolute top-0 left-0'></canvas>
   );
 };
 

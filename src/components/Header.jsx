@@ -1,37 +1,37 @@
-import React, { useState } from 'react';
-import Brackets from '../assets/images/logo/brackets-dark.png';
-import { FaBars, FaTimes, FaGithub, FaLinkedin, FaExchangeAlt } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { HiOutlineMail } from 'react-icons/hi';
-import { FcDocument } from 'react-icons/fc';
+import { useState, Fragment } from 'react';
 import { Link } from 'react-scroll';
-import { Fragment } from 'react';
 import { Menu, Transition } from '@headlessui/react';
-import { BsChevronDown } from 'react-icons/bs';
 import { i18n } from '../locale/i18n';
-import '../../node_modules/flag-icons/css/flag-icons.min.css';
 import Sidebar from './Sidebar';
-import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
-import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
 import toast from 'react-hot-toast';
 
-const I18N_STORAGE_KEY = 'i18nextLng';
-const CURRENT_KEY = localStorage.getItem('i18nextLng');
+import { FaBars, FaTimes, FaGithub, FaLinkedin, FaExchangeAlt } from 'react-icons/fa';
+import { BsFillPersonLinesFill, BsChevronDown } from 'react-icons/bs';
+import { HiOutlineMail } from 'react-icons/hi';
+import { FcDocument } from 'react-icons/fc';
 
-const classNames = (...classes) => {
-  return classes.filter(Boolean).join(' ');
-};
-
-const changeLocale = (e) => {
-  localStorage.setItem(I18N_STORAGE_KEY, e.target.value);
-  if (CURRENT_KEY !== e.target.value) {
-    window.location.reload();
-  }
-};
+import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
+import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
+import Brackets from '../assets/images/logo/brackets-dark.png';
+import '../../node_modules/flag-icons/css/flag-icons.min.css';
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+
+  const classNames = (...classes) => {
+    return classes.filter(Boolean).join(' ');
+  };
+
+  const I18N_STORAGE_KEY = 'i18nextLng';
+  const CURRENT_KEY = localStorage.getItem('i18nextLng');
+
+  const changeLocale = (e) => {
+    localStorage.setItem(I18N_STORAGE_KEY, e.target.value);
+    if (CURRENT_KEY !== e.target.value) {
+      window.location.reload();
+    }
+  };
 
   const social = {
     linkedin: 'https://www.linkedin.com/in/tiagocreator/',
@@ -94,12 +94,12 @@ const Navbar = () => {
         </ul>
 
         <div className='flex items-center justify-center text-5xl'>
-          <button className='w-auto h-auto' value='pt-BR' onClick={changeLocale}>
-            <span className='fi fi-br -z-10'></span>
-          </button>
-          <FaExchangeAlt className='text-2xl mx-8' />
           <button className='w-auto h-auto' value='en-US' onClick={changeLocale}>
             <span className='fi fi-us -z-10'></span>
+          </button>
+          <FaExchangeAlt className='text-2xl mx-8' />
+          <button className='w-auto h-auto' value='pt-BR' onClick={changeLocale}>
+            <span className='fi fi-br -z-10'></span>
           </button>
         </div>
         <ul className='w-[300px] flex justify-between items-center'>
@@ -155,19 +155,6 @@ const Navbar = () => {
                   <Menu.Item>
                     {({ active }) => (
                       <button
-                        value='pt-BR'
-                        className={classNames(
-                          active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
-                          'w-full text-left block px-4 py-2 text-sm',
-                        )}
-                        onClick={changeLocale}>
-                        <span className='fi fi-br mr-2'></span>Português
-                      </button>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <button
                         value='en-US'
                         className={classNames(
                           active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
@@ -175,6 +162,19 @@ const Navbar = () => {
                         )}
                         onClick={changeLocale}>
                         <span className='fi fi-us mr-2'></span>English
+                      </button>
+                    )}
+                  </Menu.Item>
+                  <Menu.Item>
+                    {({ active }) => (
+                      <button
+                        value='pt-BR'
+                        className={classNames(
+                          active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
+                          'w-full text-left block px-4 py-2 text-sm',
+                        )}
+                        onClick={changeLocale}>
+                        <span className='fi fi-br mr-2'></span>Português
                       </button>
                     )}
                   </Menu.Item>

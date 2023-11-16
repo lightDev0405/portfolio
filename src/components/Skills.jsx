@@ -25,14 +25,14 @@ const Skills = () => {
   };
 
   return (
-    <section name='skills' className='w-full pt-4 md:pt-16'>
+    <section name='skills' className='w-full pt-12 md:pt-20'>
       <div className='max-w-[900px] mx-auto p-4 md:p-8'>
         <div>
           <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
             {i18n.t('skillsSection.sectionName')}
           </h1>
         </div>
-        <div className='w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 text-center gap-5 py-10'>
+        <div className='w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 text-center gap-5 pb-6 md:pb-0 md:pt-6'>
           <SkillCard shadow='rgba(19,33,50,0.8)' color='#61DAFB' icon={SiReact} name='React' />
           <SkillCard shadow='rgba(19,33,50,0.8)' color='#764ABC' icon={SiRedux} name='Redux' />
           <SkillCard
@@ -65,7 +65,7 @@ const Skills = () => {
             shadow='rgba(19,33,50,0.8)'
             color='#36B7F0'
             icon={SiTailwindcss}
-            name='Tailwind CSS'
+            name='Tailwind'
           />
           <SkillCard
             shadow='rgba(19,33,50,0.8)'

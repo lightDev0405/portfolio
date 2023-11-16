@@ -29,7 +29,7 @@ const Contact = () => {
   };
 
   return (
-    <section className='w-full pb-5 md:pb-9' name='contact'>
+    <section className='w-full pb-5 md:pb-9 pt-12 md:pt-24' name='contact'>
       <div className='max-w-[900px] mx-auto px-8'>
         <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>
           {i18n.t('contactSection.sectionName')}

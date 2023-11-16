@@ -26,7 +26,7 @@ const Works = () => {
   };
 
   return (
-    <section name='works' className='pb-[70px] md:pb-[80px] w-full text-theme-white'>
+    <section name='works' className='pt-12 md:pt-20 w-full text-theme-white'>
       <div className='flex flex-col w-full h-full max-w-[900px] mx-auto py-4 px-8'>
         <div className='pb-10'>
           <h1 className='font-medium text-xl 2xl:text-2xl border-b-4 inline-block border-theme-white mb-4 pb-1'>

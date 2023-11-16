@@ -3,7 +3,7 @@ import { i18n } from '../locale/i18n';
 
 const About = () => {
   return (
-    <section className='md:mt-12 lg:mt-14 w-full flex flex-col' name='about'>
+    <section className='pt-8 md:pt-24 w-full flex flex-col' name='about'>
       <div className='w-full max-w-[900px] flex flex-col justify-center mx-auto px-4 md:px-8'>
         <div className='flex flex-col md:flex-row align-center justify-center md:justify-between'>
           <SolarSystem />

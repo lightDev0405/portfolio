@@ -72,6 +72,11 @@ const Navbar = () => {
 
         <ul className='h-60 flex flex-col justify-between items-center text-3xl'>
           <li>
+            <Link onClick={handleClick} to='home' smooth={true} duration={600}>
+              {i18n.t('header.nav.home')}
+            </Link>
+          </li>
+          <li>
             <Link onClick={handleClick} to='about' smooth={true} duration={600}>
               {i18n.t('header.nav.about')}
             </Link>
@@ -183,7 +188,12 @@ const Navbar = () => {
             </Transition>
           </Menu>
         </div>
-        <ul className='flex md:text-lg 2xl:text-xl w-[330px] justify-between items-center'>
+        <ul className='flex md:text-lg font-medium w-[385px] justify-between items-center '>
+          <li className='cursor-pointer hover:text-white duration-200'>
+            <Link to='home' smooth={true} duration={600}>
+              {i18n.t('header.nav.home')}
+            </Link>
+          </li>
           <li className='cursor-pointer hover:text-white duration-200'>
             <Link to='about' smooth={true} duration={600}>
               {i18n.t('header.nav.about')}

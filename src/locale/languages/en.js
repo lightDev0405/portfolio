@@ -3,6 +3,7 @@ const content = {
     locale: {
       header: {
         nav: {
+          home: 'Home',
           about: 'About',
           skills: 'Skills',
           works: 'Works',

@@ -44,7 +44,7 @@ const Home = () => {
       <Stars />
       <section
         className='w-full flex justify-center align-center flex-col pt-16 md:pt-20 min-h-screen lg:pb-16 relative bg-transparent shadow-lg shadow-[#282A3A]'
-        name='about'>
+        name='home'>
         <div className='w-full max-w-[900px] flex flex-col justify-center mx-auto px-4 md:px-8'>
           <div className='flex flex-col md:flex-row-reverse align-center justify-center'>
             {/* Profile Picture */}

@@ -1,14 +1,12 @@
 import WorkElement from './WorkElement';
 import CineflixMobileImg from '../assets/images/works/cineflix.jpg';
 import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
-import JsClassicGamesMobileImg from '../assets/images/works/js-classic-games.jpg';
-import JsClassicGamesDesktopImg from '../assets/images/works/js-classic-games-desktop.jpg';
 import NoirMobileImg from '../assets/images/works/noir.jpg';
 import NoirDesktopImg from '../assets/images/works/noir-desktop.jpg';
 import LassoMobileImg from '../assets/images/works/lasso.jpg';
 import LassoDesktopImg from '../assets/images/works/lasso-desktop.jpg';
-import HypeCamperDesktopImg from '../assets/images/works/hype-camper-desktop.jpg';
-import HypeCamperMobileImg from '../assets/images/works/hype-camper.jpg';
+import CasaECorMobileImg from '../assets/images/works/casa-e-cor.jpg';
+import CasaECorDesktopImg from '../assets/images/works/casa-e-cor-desktop.jpg';
 
 import Slider from 'react-slick';
 import { i18n } from '../locale/i18n';
@@ -36,28 +34,18 @@ const Works = () => {
         </div>
 
         <>
+          {/* Mobile Slider */}
           <div className='mx-auto w-full max-w-[400px] md:hidden'>
             <Slider {...settings}>
               <div>
                 <WorkElement
-                  img={HypeCamperMobileImg}
-                  alt={i18n.t('worksSection.hypeCamper.alt')}
-                  name={`${i18n.t('worksSection.hypeCamper.name')}`}
-                  description={`${i18n.t('worksSection.hypeCamper.description')}`}
-                  tools='Node, Express, MongoDB'
-                  link='https://hype-camper.cyclic.app/'
-                  code='https://github.com/tiagocreator/hype-camper'
-                />
-              </div>
-              <div>
-                <WorkElement
-                  img={JsClassicGamesMobileImg}
-                  alt={i18n.t('worksSection.classicGames.alt')}
-                  name={`${i18n.t('worksSection.classicGames.name')}`}
-                  description={`${i18n.t('worksSection.classicGames.description')}`}
-                  tools='HTML, CSS, JavaScript'
-                  link='https://js-classic-games.vercel.app/'
-                  code='https://github.com/tiagocreator/js-classic-games'
+                  img={CasaECorMobileImg}
+                  alt={i18n.t('worksSection.casaECor.alt')}
+                  name={`${i18n.t('worksSection.casaECor.name')}`}
+                  description={`${i18n.t('worksSection.casaECor.description')}`}
+                  tools='HTML5, LESS, JavaScript'
+                  link='https://casa-e-cor.vercel.app/'
+                  code='https://github.com/tiagocreator/casa-e-cor'
                 />
               </div>
               <div>
@@ -77,7 +65,7 @@ const Works = () => {
                   alt={i18n.t('worksSection.noir.alt')}
                   name={`${i18n.t('worksSection.noir.name')}`}
                   description={`${i18n.t('worksSection.noir.description')}`}
-                  tools='HTML, LESS, JavaScript'
+                  tools='HTML5, CSS3, JavaScript'
                   link='https://noir-barbearia.vercel.app/'
                   code='https://github.com/tiagocreator/noir-barbearia'
                 />
@@ -95,27 +83,16 @@ const Works = () => {
               </div>
             </Slider>
           </div>
-
+          {/* Desktop */}
           <div className='hidden md:flex flex-col'>
             <WorkElement
-              img={HypeCamperDesktopImg}
-              alt={i18n.t('worksSection.hypeCamper.alt')}
-              name={`${i18n.t('worksSection.hypeCamper.name')}`}
-              description={`${i18n.t('worksSection.hypeCamper.description')}`}
-              tools='Node, Express, MongoDB'
-              link='https://hype-camper.cyclic.app/'
-              code='https://github.com/tiagocreator/hype-camper'
-            />
-
-            <WorkElement
-              img={JsClassicGamesDesktopImg}
-              alt={i18n.t('worksSection.classicGames.alt')}
-              name={`${i18n.t('worksSection.classicGames.name')}`}
-              description={`${i18n.t('worksSection.classicGames.description')}`}
-              tools='HTML, CSS, JavaScript'
-              link='https://js-classic-games.vercel.app/'
-              code='https://github.com/tiagocreator/js-classic-games'
-              reverse
+              img={CasaECorDesktopImg}
+              alt={i18n.t('worksSection.casaECor.alt')}
+              name={`${i18n.t('worksSection.casaECor.name')}`}
+              description={`${i18n.t('worksSection.casaECor.description')}`}
+              tools='HTML5, LESS, JavaScript'
+              link='https://casa-e-cor.vercel.app/'
+              code='https://github.com/tiagocreator/casa-e-cor'
             />
             <WorkElement
               img={LassoDesktopImg}
@@ -125,16 +102,16 @@ const Works = () => {
               tools='React, Redux, Sass'
               link='https://lasso-ecommerce.up.railway.app/'
               code='https://github.com/tiagocreator/lasso-ecommerce'
+              reverse
             />
             <WorkElement
               img={NoirDesktopImg}
               alt={i18n.t('worksSection.noir.alt')}
               name={`${i18n.t('worksSection.noir.name')}`}
               description={`${i18n.t('worksSection.noir.description')}`}
-              tools='HTML, LESS, JavaScript'
+              tools='HTML5, CSS3, JavaScript'
               link='https://noir-barbearia.vercel.app/'
               code='https://github.com/tiagocreator/noir-barbearia'
-              reverse
             />
             <WorkElement
               img={CineflixDesktopImg}
@@ -144,6 +121,7 @@ const Works = () => {
               tools='React, TailwindCSS, Firebase'
               link='https://cineflix-ten.vercel.app/'
               code='https://github.com/tiagocreator/cineflix'
+              reverse
             />
           </div>
         </>

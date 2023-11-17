@@ -46,7 +46,7 @@ const content = {
       worksSection: {
         sectionName: 'Projetos',
         intro:
-          'Soluções de Front-End Incríveis: mesclando design e funcionalidade. Aqui estão alguns exemplos do meu trabalho.',
+          'Front-End Atraente e Inovador: mesclando design e funcionalidade. Aqui estão alguns exemplos do meu trabalho.',
         workElement: {
           tools: 'Ferramentas',
           buttons: {

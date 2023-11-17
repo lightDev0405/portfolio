@@ -61,16 +61,10 @@ const content = {
             'Banco de dados de filmes imitando o visual do Netflix. O projeto conta com integração com o Firebase para criar uma conta, fazer login e salvar os filmes nos favoritos.',
           alt: 'cineflix site de informações sobre filmes e séries',
         },
-        classicGames: {
-          name: 'Jogos Clássicos',
-          description:
-            'Website dos meus jogos clássicos favoritos que eu recriei de forma mais simplificada usando HTML, CSS e JavaScript. Meu objetivo com isso é aprender a lógica e a sintaxe do JavaScript.',
-          alt: 'site de repositório de jogos clássicos',
-        },
         noir: {
           name: 'Noir',
           description:
-            'Noir é um site 100% responsivo de barbearia, com dark-mode e 4 páginas feito em HTML, LESS e JavaScript, sem o uso de frameworks.',
+            'Noir é um site com um design atrativo, sofisticado e funcional, dedicado a oferecer uma experiência completa de barbearia.',
           alt: 'noir site de barbearia',
         },
         lasso: {
@@ -79,17 +73,17 @@ const content = {
             'Loja completa onde os usuários podem criar conta e fazer login, adicionar produtos ao carrinho, fazer compras, filtrar produtos por categoria, nome, marca, ver a lista de pedidos e etc.',
           alt: 'loja online lasso',
         },
-        hypeCamper: {
-          name: 'Hype Camper',
+        casaECor: {
+          name: 'Casa&Cor',
           description:
-            'Hype Camper é um site full stack de acampamentos onde foi integrado Node, Express e MongoDB ao front-end. O usuário pode criar uma conta, postar novos acampamentos, gerenciar e fazer reviews.',
-          alt: 'hype camper site de lugares para acampar',
+            'Um site de reforma e decoração elegante com design intuitivo, harmônico e inovador. Apresenta uma galeria visual, informações descritivas e modo escuro.',
         },
+        alt: 'site de reforma e decoração',
       },
       contactSection: {
         sectionName: 'Contato',
         intro:
-          'Para entrar em contato comigo, preencha o formulário abaixo, ou se preferir, entre em contato pelo LinkedIn ou envie um e-mail. Estou disponível para contratos e aberto a qualquer idéia de cooperação, incluindo freelancing.',
+          'Para entrar em contato comigo, preencha o formulário abaixo, ou se preferir, entre em contato pelo LinkedIn ou envie um e-mail. Estou disponível para contratos e aberto a qualquer idéia de cooperação.',
         placeholders: {
           placeholderName: 'Nome',
           placeholderMessage: 'Mensagem',

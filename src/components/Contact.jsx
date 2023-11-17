@@ -60,8 +60,8 @@ const Contact = () => {
             required></textarea>
           <button
             type='submit'
-            className='w-28 h-11 2xl:w-32 2xl:h-12 flex items-center justify-center cursor-pointer hover:text-white active:text-white duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 rounded text-lg 2xl:text-xl mt-3 md:mt-5 mx-auto font-medium'>
-            {i18n.t('contactSection.button')} <RiSendPlaneFill className='ml-3' />
+            className='h-12 md:h-auto py-[4px] 2xl:py-1.5 px-3 flex items-center justify-center cursor-pointer hover:text-white active:text-white duration-200 bg-theme-blue-50 hover:bg-theme-blue-100 active:bg-theme-blue-100 rounded text-lg mt-3 md:mt-5 mx-auto font-medium'>
+            {i18n.t('contactSection.button')} <RiSendPlaneFill className='ml-1' />
           </button>
         </form>
       </div>

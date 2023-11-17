@@ -80,24 +80,24 @@ const WorkElement = ({ img, alt, name, description, tools, link, code, reverse }
           </div>
           <div className='flex justify-between items-center mt-4 sm:w-[80px] xl:w-[264px]'>
             <a
-              className='sm:h-9 sm:w-9 xl:h-8 xl:w-32 flex items-center justify-around bg-theme-blue-50 hover:text-white active:text-white hover:bg-theme-blue-100 active:bg-theme-blue-100 sm:rounded-full xl:rounded hover:-translate-y-[2px] duration-300'
+              className='sm:h-9 sm:w-9 xl:w-32 flex items-center justify-center bg-theme-blue-50 hover:text-white active:text-white hover:bg-theme-blue-100 active:bg-theme-blue-100 sm:rounded-full xl:rounded hover:-translate-y-[2px] duration-300'
               href={link}
               target='_blank'
               rel='noreferrer'>
               <span className='sm:hidden xl:block'>
                 {i18n.t('worksSection.workElement.buttons.demo')}{' '}
               </span>
-              <FiExternalLink size={20} />
+              <FiExternalLink size={20} className='xl:ml-1' />
             </a>
             <a
-              className='sm:h-9 sm:w-9 xl:h-8 xl:w-32 flex items-center justify-around shadow-sm shadow-theme-white bg-theme-white text-theme-black font-bold sm:rounded-full xl:rounded hover:-translate-y-[2px] duration-300'
+              className='sm:h-9 sm:w-9 xl:w-32 flex items-center justify-center shadow-sm shadow-theme-white bg-theme-white text-theme-black font-bold sm:rounded-full xl:rounded hover:-translate-y-[2px] duration-300'
               href={code}
               target='_blank'
               rel='noreferrer'>
               <span className='sm:hidden xl:block'>
                 {i18n.t('worksSection.workElement.buttons.code')}{' '}
               </span>
-              <AiFillGithub size={20} />
+              <AiFillGithub size={20} className='xl:ml-1' />
             </a>
           </div>
         </div>

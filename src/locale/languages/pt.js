@@ -46,7 +46,7 @@ const content = {
       worksSection: {
         sectionName: 'Projetos',
         intro:
-          'Criei e participei do desenvolvimento de projetos completos. Testando, otimizando, corrigindo bugs e colaborando com designers. Aqui estão alguns exemplos do meu trabalho.',
+          'Soluções de Front-End Incríveis: mesclando design e funcionalidade. Aqui estão alguns exemplos do meu trabalho.',
         workElement: {
           tools: 'Ferramentas',
           buttons: {

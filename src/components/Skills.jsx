@@ -5,14 +5,15 @@ import {
   SiFirebase,
   SiReact,
   SiFigma,
-  SiRedux,
   SiJavascript,
   SiTypescript,
-  SiBootstrap,
+  SiHtml5,
+  SiCss3,
+  SiSass,
+  SiChakraui,
+  SiJest,
 } from 'react-icons/si';
-import { DiGit } from 'react-icons/di';
 import { BsPlusLg, BsServer } from 'react-icons/bs';
-import { FaNodeJs, FaSass } from 'react-icons/fa';
 import { HiMinus } from 'react-icons/hi';
 
 import { i18n } from '../locale/i18n';
@@ -33,76 +34,18 @@ const Skills = () => {
           </h1>
         </div>
         <div className='w-full grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 text-center gap-5 pb-6 md:pb-0 md:pt-6'>
-          <SkillCard shadow='rgba(19,33,50,0.8)' color='#61DAFB' icon={SiReact} name='React' />
-          <SkillCard shadow='rgba(19,33,50,0.8)' color='#764ABC' icon={SiRedux} name='Redux' />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#EFD81E'
-            icon={SiJavascript}
-            name='JavaScript'
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#146BBC'
-            icon={SiTypescript}
-            name='TypeScript'
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#36B7F0'
-            icon={SiBootstrap}
-            name='Bootstrap'
-            active={active}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#36B7F0'
-            icon={FaSass}
-            name='Sass'
-            iconStyles={'scale-[1.3]'}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#36B7F0'
-            icon={SiTailwindcss}
-            name='Tailwind'
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#62CA80'
-            icon={SiFigma}
-            name='Figma'
-            active={active}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#8BBF3D'
-            icon={FaNodeJs}
-            name='NodeJs'
-            active={active}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#EE800F'
-            icon={SiFirebase}
-            name='Firebase'
-            active={active}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#69DDB3'
-            icon={BsServer}
-            name='Restful API'
-            active={active}
-          />
-          <SkillCard
-            shadow='rgba(19,33,50,0.8)'
-            color='#e44c30'
-            icon={DiGit}
-            name='Git'
-            active={active}
-            iconStyles={'scale-[1.4]'}
-          />
+          <SkillCard color='#61DAFB' icon={SiReact} name='React' />
+          <SkillCard color='#EFD81E' icon={SiJavascript} name='JavaScript' />
+          <SkillCard color='#146BBC' icon={SiTypescript} name='TypeScript' />
+          <SkillCard color='#DC4A29' icon={SiHtml5} name='HTML5' />
+          <SkillCard color='#376FB4' icon={SiCss3} name='CSS3' />
+          <SkillCard color='#62CA80' icon={SiFigma} name='Figma' />
+          <SkillCard color='#C76494' icon={SiSass} name='Sass' active={active} />
+          <SkillCard color='#65CBCD' icon={SiChakraui} name='Chakra UI' active={active} />
+          <SkillCard color='#36B7F0' icon={SiTailwindcss} name='Tailwind' active={active} />
+          <SkillCard color='#EE800F' icon={SiFirebase} name='Firebase' active={active} />
+          <SkillCard color='#69DDB3' icon={BsServer} name='Restful API' active={active} />
+          <SkillCard color='#954058' icon={SiJest} name='Jest' active={active} />
         </div>
         <button
           className='sm:hidden w-36 h-11 flex justify-center items-center mx-auto rounded bg-transparent border-2 hover:text-white active:text-white hover:bg-theme-blue-50 active:bg-theme-blue-50 hover:border-theme-blue-50 active:border-theme-blue-50 duration-200 group font-medium'

@@ -46,7 +46,7 @@ const content = {
       worksSection: {
         sectionName: 'Works',
         intro:
-          'I created and participated in the development of complete projects. Testing, optimizing, fixing bugs and collaborating with designers. Here are some examples of my work.',
+          'Amazing Front-End Experiences: Merging Design and Functionality. Here are some examples of my work.',
         workElement: {
           tools: 'Tools',
           buttons: {

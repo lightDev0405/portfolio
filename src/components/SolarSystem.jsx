@@ -1,5 +1,5 @@
-import { DiJavascript1, DiNodejsSmall, DiReact, DiGit } from 'react-icons/di';
-import { SiTypescript, SiTailwindcss } from 'react-icons/si';
+import { DiJavascript1, DiReact, DiGit } from 'react-icons/di';
+import { SiTypescript, SiTailwindcss, SiFirebase } from 'react-icons/si';
 import { useState } from 'react';
 
 const ReactSolarSystem = () => {
@@ -51,10 +51,10 @@ const ReactSolarSystem = () => {
         {/* Solar Orbit */}
         <div className='w-[47.5%] h-[47.5%] border-[1px] border-[rgba(0,0,0,0.2)] rounded-[50%] box-border absolute inset-0 m-auto transform perspective-9 transition-all duration-[3s]'>
           {/* Solar Planet */}
-          <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(100,100,100,0.1)] border-[2px] border-[#4da53f] text-[#4da53f] text-[1.2rem] leading-[26px] animate-travelOrbit4 origin-[50%_363%] transition-all duration-[1s]'>
+          <div className='w-[25px] h-[25px] rounded-[50%] absolute inset-x-0 top-[-14px] bottom-0 box-border flex items-center justify-center my-0 mx-auto bg-[rgba(100,100,100,0.1)] border-[2px] border-[#EB7F25] text-[#EB7F25] text-[1.07rem] leading-[26px] animate-travelOrbit4 origin-[50%_363%] transition-all duration-[1s]'>
             {/* Icon */}
             <span className='animate-unrotate4'>
-              <DiNodejsSmall />
+              <SiFirebase />
             </span>
           </div>
         </div>

@@ -14,7 +14,7 @@ import { FcDocument } from 'react-icons/fc';
 
 import ptResume from '../assets/docs/tiago-leite-resume-pt.pdf';
 import enResume from '../assets/docs/tiago-leite-resume-en.pdf';
-import ProfilePicture from '../assets/images/profile/me.jpeg';
+import ProfilePicture from '../assets/images/profile/me.jpg';
 
 // Language settings
 const CURRENT_KEY = localStorage.getItem('i18nextLng');

@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <header className='w-full mx-auto h-14 md:h-20 flex justify-between items-center px-5 md:px-10 bg-[rgba(32,32,35,0.4)] text-theme-white fixed backdrop-blur-[10px] z-10 shadow-[0px_3px_15px_0px] shadow-[rgba(0,0,0,0.2)]'>
-      <Link to='about' smooth={true} duration={600}>
+      <Link to='home' smooth={true} duration={600}>
         <div className='group flex justify-center items-center select-none'>
           <img
             className='w-8 2xl:w-9 h-auto group-hover:rotate-[25deg] duration-300'

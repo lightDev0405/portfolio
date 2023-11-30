@@ -64,7 +64,7 @@ const content = {
         noir: {
           name: 'Noir',
           description:
-            'Noir is a website with a attractive, sophisticated and functional design, dedicated to offering a complete barbershop experience.',
+            'Noir is a website with an attractive, sophisticated, and functional design, dedicated to offering a complete barbershop experience.',
           alt: 'noir barbershop website',
         },
         lasso: {
@@ -76,7 +76,7 @@ const content = {
         casaECor: {
           name: 'Casa&Cor',
           description:
-            'An elegant renovation and decoration website with an intuitive, harmonious and responsive design. Features a visual gallery, descriptive information, and dark mode.',
+            'An elegant renovation and decoration website with an intuitive, harmonious, and responsive design. Features a visual gallery, descriptive information, and dark mode.',
           alt: 'renovation and decoration website',
         },
       },

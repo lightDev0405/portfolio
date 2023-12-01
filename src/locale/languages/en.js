@@ -70,7 +70,7 @@ const content = {
         lasso: {
           name: 'Lasso',
           description:
-            'A complete e-commerce where users can create an account and login, add products to cart, shop, filter products by category, name, brand, see the order list and much more.',
+            'Complete e-commerce where users can create an account and log in, add products to a cart, shop, filter products by category, name, and brand, see the order list, and much more.',
           alt: 'lasso online store',
         },
         casaECor: {

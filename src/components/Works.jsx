@@ -1,12 +1,12 @@
 import WorkElement from './WorkElement';
-import CineflixMobileImg from '../assets/images/works/cineflix.jpg';
-import CineflixDesktopImg from '../assets/images/works/cineflix-desktop.jpg';
 import NoirMobileImg from '../assets/images/works/noir.jpg';
 import NoirDesktopImg from '../assets/images/works/noir-desktop.jpg';
 import LassoMobileImg from '../assets/images/works/lasso.jpg';
 import LassoDesktopImg from '../assets/images/works/lasso-desktop.jpg';
 import CasaECorMobileImg from '../assets/images/works/casa-e-cor.jpg';
 import CasaECorDesktopImg from '../assets/images/works/casa-e-cor-desktop.jpg';
+import AlugaFacilMobileImg from '../assets/images/works/aluga-facil.jpg';
+import AlugaFacilDesktopImg from '../assets/images/works/aluga-facil-desktop.jpg';
 
 import Slider from 'react-slick';
 import { i18n } from '../locale/i18n';
@@ -72,13 +72,13 @@ const Works = () => {
               </div>
               <div>
                 <WorkElement
-                  img={CineflixMobileImg}
-                  alt={i18n.t('worksSection.cineflix.alt')}
-                  name={`${i18n.t('worksSection.cineflix.name')}`}
-                  description={`${i18n.t('worksSection.cineflix.description')}`}
-                  tools='React, TailwindCSS, Firebase'
-                  link='https://cineflix-ten.vercel.app/'
-                  code='https://github.com/tiagocreator/cineflix'
+                  img={AlugaFacilMobileImg}
+                  alt={i18n.t('worksSection.alugaFacil.alt')}
+                  name={`${i18n.t('worksSection.alugaFacil.name')}`}
+                  description={`${i18n.t('worksSection.alugaFacil.description')}`}
+                  tools='React, TypeScript, Sass'
+                  link='https://aluga-facil-ten.netlify.app/'
+                  code='https://github.com/tiagocreator/aluga-facil'
                 />
               </div>
             </Slider>
@@ -114,13 +114,13 @@ const Works = () => {
               code='https://github.com/tiagocreator/noir-barbearia'
             />
             <WorkElement
-              img={CineflixDesktopImg}
-              alt={i18n.t('worksSection.cineflix.alt')}
-              name={`${i18n.t('worksSection.cineflix.name')}`}
-              description={`${i18n.t('worksSection.cineflix.description')}`}
-              tools='React, TailwindCSS, Firebase'
-              link='https://cineflix-ten.vercel.app/'
-              code='https://github.com/tiagocreator/cineflix'
+              img={AlugaFacilDesktopImg}
+              alt={i18n.t('worksSection.alugaFacil.alt')}
+              name={`${i18n.t('worksSection.alugaFacil.name')}`}
+              description={`${i18n.t('worksSection.alugaFacil.description')}`}
+              tools='React, TypeScript, Sass'
+              link='https://aluga-facil-ten.netlify.app/'
+              code='https://github.com/tiagocreator/aluga-facil'
               reverse
             />
           </div>

@@ -55,11 +55,11 @@ const content = {
           },
           featured: 'Projeto em Destaque',
         },
-        cineflix: {
-          name: 'Cineflix',
+        alugaFacil: {
+          name: 'Aluga Fácil',
           description:
-            'Banco de dados de filmes imitando o visual do Netflix. O projeto conta com integração com o Firebase para criar uma conta, fazer login e salvar os filmes nos favoritos.',
-          alt: 'cineflix site de informações sobre filmes e séries',
+            'Site de aluguel de carros com 6 páginas. Construído com uma interface moderna e responsiva para busca, comparação e reserva de veículos.',
+          alt: 'aluga fácil site de aluguel de carros',
         },
         noir: {
           name: 'Noir',

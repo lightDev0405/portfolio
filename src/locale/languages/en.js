@@ -55,11 +55,11 @@ const content = {
           },
           featured: 'Featured Project',
         },
-        cineflix: {
-          name: 'Cineflix',
+        alugaFacil: {
+          name: 'Aluga Fácil',
           description:
-            'Database of movies mimicking the look of Netflix, it has integration with Firebase to create an account, login and save the movies to favorites.',
-          alt: 'cineflix website of movie and series information',
+            'Car rental business website with 6 pages built with a modern and responsive interface for searching, comparing, and reserving cars.',
+          alt: 'aluga fácil car rental website',
         },
         noir: {
           name: 'Noir',

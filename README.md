@@ -5,7 +5,7 @@
 
 ---
 
-#### Meu website portfólio pessoal bilíngue, feito em React e a estilização inteira feita em TailwindCSS, com sessão de Skills, Projetos e formulário de contato usando EmailJs.
+#### Meu website portfólio pessoal bilíngue, totalmente responsivo, feito em React e a estilização inteira feita em TailwindCSS, com sessão de Skills, Projetos, página Home animada com chuva de meteoros, e formulário de contato usando EmailJs.
 
 ---
 
@@ -22,26 +22,19 @@ EmailJs | Uma biblioteca que ajuda a enviar e-mails usando apenas tecnologias fr
 
 ---
 
-### Imagens
-
-#### :iphone: Imagens do site mobile:
-
-![about-mobile](https://user-images.githubusercontent.com/82607849/214568092-0fbc2e66-d9eb-45b4-a606-7f833ec2b363.png)
-![contact-mobile](https://user-images.githubusercontent.com/82607849/214568333-0f889b09-535f-47d2-af24-573c8ef9508e.png)
-
-![works-mobile](https://user-images.githubusercontent.com/82607849/214568584-9516ee0b-a546-4dca-afc0-7292a0c47a95.png)
-![menu-mobile](https://user-images.githubusercontent.com/82607849/214568601-8f72696e-705d-4007-9ce3-744e473daf38.png)
-
-#### :desktop_computer: Imagens do site desktop:
-
-![about-desktop](https://user-images.githubusercontent.com/82607849/214569599-6e005225-b95c-4c70-a003-4f5c3b6a1b19.png)
-
-![works-desktop](https://user-images.githubusercontent.com/82607849/214569719-9abec0be-1e8d-4277-92f0-f662e8986436.png)
+### :notebook: Licença
+Distribuido sobre a Licença Apache Versão 2.0 (Apache 2.0), para saber mais leia LICENSE.txt.
 
 ---
 
-### :notebook: Licença
-Distribuido sobre a Licença Apache Versão 2.0 (Apache 2.0), para saber mais leia LICENSE.txt.
+### Imagens
+
+#### :iphone: Página Home mobile:
+![pagina-home-mobile](https://github.com/tiagocreator/my-portfolio/assets/82607849/a4a4c148-f08e-4c7a-9b87-0c0436874b92)
+
+
+#### :desktop_computer: Página Home desktop:
+![pagina-home-desktop](https://github.com/tiagocreator/my-portfolio/assets/82607849/f0409270-f234-4430-a5da-17cf19d68f4a)
 
 ---
 

@@ -9,7 +9,6 @@ const Contact = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -26,7 +25,11 @@ const Contact = () => {
           toast.error(i18n.t('toast.contact.error'), { duration: 5000 });
         },
       );
+
+  
   };
+
+  
 
   return (
     <section className='w-full pb-5 md:pb-9 pt-12 md:pt-24' name='contact'>

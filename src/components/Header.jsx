@@ -57,7 +57,7 @@ const Navbar = () => {
             src={Brackets}
             alt='logo'
           />
-          <h1 className='text-xl 2xl:text-2xl ml-4 font-bold'>Tiago Leite</h1>
+          <h1 className='text-xl 2xl:text-2xl ml-4 font-bold'>Best Friend</h1>
         </div>
       </Link>
 
@@ -138,56 +138,6 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className='hidden md:flex items-center justify-center'>
-        <div className='h-full mr-8'>
-          <Menu as='div' className='relative inline-block text-left'>
-            <div>
-              <Menu.Button className='inline-flex justify-center items-center w-full rounded border border-theme-white shadow-sm md:px-1.5 md:py-1.5 2xl:px-2 2xl:py-2 bg-theme-white text-sm font-medium text-gray-700 hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-theme-blue-100'>
-                {CURRENT_KEY === 'pt-BR' ? 'PT' : 'EN'}
-                <BsChevronDown className='-mr-1 ml-0.5 text-sm' aria-hidden='true' />
-              </Menu.Button>
-            </div>
-
-            <Transition
-              as={Fragment}
-              enter='transition ease-out duration-100'
-              enterFrom='transform opacity-0 scale-95'
-              enterTo='transform opacity-100 scale-100'
-              leave='transition ease-in duration-75'
-              leaveFrom='transform opacity-100 scale-100'
-              leaveTo='transform opacity-0 scale-95'>
-              <Menu.Items className='origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none'>
-                <div className='py-1'>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <button
-                        value='en-US'
-                        className={classNames(
-                          active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
-                          'w-full text-left block px-4 py-2 text-sm',
-                        )}
-                        onClick={changeLocale}>
-                        <span className='fi fi-us mr-2'></span>English
-                      </button>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <button
-                        value='pt-BR'
-                        className={classNames(
-                          active ? 'bg-theme-white text-theme-black' : 'text-gray-700',
-                          'w-full text-left block px-4 py-2 text-sm',
-                        )}
-                        onClick={changeLocale}>
-                        <span className='fi fi-br mr-2'></span>Português
-                      </button>
-                    )}
-                  </Menu.Item>
-                </div>
-              </Menu.Items>
-            </Transition>
-          </Menu>
-        </div>
         <ul className='flex md:text-lg font-medium w-[385px] justify-between items-center '>
           <li className='cursor-pointer hover:text-white duration-200'>
             <Link to='home' smooth={true} duration={600}>

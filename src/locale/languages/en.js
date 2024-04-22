@@ -16,18 +16,18 @@ const content = {
         },
       },
       homeSection: {
-        intro: "Hello, I'm Tiago Leite.",
+        intro: "Hello, I'm Senior Web Developer.",
         welcome: 'Welcome to my portfolio',
         smallDescription: "I'm a",
         animatedTexts: {
           textOne: 'front-end developer',
           textTwo: 'web developer',
           textThree: 'CSS wizard',
-          textFour: 'React developer',
+          textFour: 'React & Next.js developer',
           textFive: 'JavaScript ninja',
           textSix: 'UI engineer',
         },
-        description: "I'm a self-taught and motivated front-end developer based in Brazil.",
+        description: "I'm a self-taught and motivated front-end developer.",
         buttons: {
           work: 'View Work',
           hire: 'Contact',

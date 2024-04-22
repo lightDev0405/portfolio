@@ -172,9 +172,9 @@ const Navbar = () => {
       </div>
 
       {/* Sidebar */}
-      <div className='hidden lg:flex fixed flex-col top-[35vh] left-0'>
+      {/* <div className='hidden lg:flex fixed flex-col top-[35vh] left-0'>
         <Sidebar />
-      </div>
+      </div> */}
     </header>
   );
 };

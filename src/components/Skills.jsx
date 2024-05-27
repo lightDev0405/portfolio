@@ -11,7 +11,7 @@ import {
   SiCss3,
   SiSass,
   SiChakraui,
-  SiJest,
+  SiWebflow,
 } from 'react-icons/si';
 import { BsPlusLg, BsServer } from 'react-icons/bs';
 import { HiMinus } from 'react-icons/hi';
@@ -45,7 +45,7 @@ const Skills = () => {
           <SkillCard color='#36B7F0' icon={SiTailwindcss} name='Tailwind' active={active} />
           <SkillCard color='#EE800F' icon={SiFirebase} name='Firebase' active={active} />
           <SkillCard color='#69DDB3' icon={BsServer} name='Restful API' active={active} />
-          <SkillCard color='#954058' icon={SiJest} name='Jest' active={active} />
+          <SkillCard color='#954058' icon={SiWebflow} name='WebFlow' active={active} />
         </div>
         <button
           className='sm:hidden w-36 h-11 flex justify-center items-center mx-auto rounded bg-transparent border-2 hover:text-white active:text-white hover:bg-theme-blue-50 active:bg-theme-blue-50 hover:border-theme-blue-50 active:border-theme-blue-50 duration-200 group font-medium'
